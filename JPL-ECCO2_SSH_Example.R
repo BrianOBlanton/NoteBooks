@@ -34,4 +34,9 @@ temp11 <- ssh[ , ]
 # rast.ssh <- rasterFromXYZ(xyz, crs=pj) 
 
 f <- '/Users/bblanton/Desktop/Dropbox/bb/SSH.1440x720.20140917.nc'
+b <- brick(f,package="raster")
+library(maps)
+library(mapdata)
+library(mapproj)
+map(database= "world", col="grey80", fill=TRUE, projection="gilbert", ylim=c(-90,90), xlim=c(-180,180), orientation= c(90,0,225))
 
