@@ -75,7 +75,7 @@ for ens in range (0,totalens):
     plt.scatter(multi[0,:,ens],multi[1,:,ens], s=1)
 
 
-# In[5]:
+# In[7]:
 
 llcrnrlon=-85  # lower-left corner, lon
 llcrnrlat=18 # lower-left corner, lat
@@ -95,7 +95,7 @@ for ens in range (0,totalens):
     mlon,mlat = m(lon,lat)
     m.scatter(mlon,mlat, s=0.5)
 
-    
+title('test')    
     
 
 
