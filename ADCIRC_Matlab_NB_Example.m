@@ -38,8 +38,8 @@ nsta=length(lon1);
 
 j=FindElementsInStrTree(fgs,lon1,lat1)
 
-%%% Compute basis functions for lon1,lat1,j
-%%%
+% Compute basis functions for lon1,lat1,j
+%
 n=fgs.e(j,:);  
 xl=fgs.x(n);
 yl=fgs.y(n);
@@ -69,3 +69,5 @@ for k=1:nsta
 end
 
 plot(time,sta_z);set(gca,'FontSize',6);axis('equal');grid
+
+
