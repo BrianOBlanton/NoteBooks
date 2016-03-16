@@ -1,11 +1,8 @@
-# https://journal.r-project.org/archive/2011-1/RJournal_2011-1_South.pdf
-# https://cran.r-project.org/web/packages/rworldmap/rworldmap.pdf
 
 library(ncdf4)
 library(RColorBrewer)
 library(rworldmap)
 
-##
 urlpath='http://mrtee.europa.renci.org:8080/thredds/dodsC/DataLayers/'
 filen='JPL.ECCO2.SSH.1440x720.20140917.nc'
 url=paste(urlpath, filen,sep='')
@@ -49,17 +46,14 @@ colourPalette=c('blue','lightblue','white',brewer.pal(9,'YlOrRd'))
 gridVals <-data.frame(att=as.vector(ssh2))
 sGDF <-SpatialGridDataFrame(gt, data=gridVals)
 
-
 mapParams <- mapGriddedData(sGDF,
                             nameColumnToPlot='att',
                             catMethod=catMethod,
                             colourPalette=colourPalette,
                             addLegend=FALSE)
-
- #adding formatted legend
- do.call(addMapLegend, c(mapParams, legendLabels="all", legendWidth=0.5, legendMar = 3))
-
+#adding formatted legend
+do.call(addMapLegend, c(mapParams, legendLabels="all", legendWidth=0.5, legendMar = 3))
 
 title(filen)
-outputPlotType = 'png'
-savePlot(paste(filen,outputPlotType,sep='.'),type=outputPlotType)
+
+
