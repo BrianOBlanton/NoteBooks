@@ -1,4 +1,4 @@
-library(ncdf)
+library(ncdf4)
 library(maptools)
 
 library(RColorBrewer)
@@ -8,18 +8,19 @@ library(rasterVis)
 
 
 url='http://opendap.renci.org:1935/thredds/dodsC/oedata/SSH.1440x720.20140917.nc'
+url='http://mrtee.europa.renci.org:8080/thredds/dodsC/DataLayers/JPL.ECCO2.SSH.1440x720.20140917.nc'
 #url='http://localhost:8080/thredds/dodsC/DBTest/netCDF/SSH.1440x720.20140917.nc'
 
 
 nc=open.ncdf(url)
 
-lon=get.var.ncdf(nc, "LONGITUDE_T") 
+lon=ncvar_get(nc,"LONGITUDE_T")
 # lon <- lon-180
+lat=ncvar_get(nc,"LATITUDE_T")
 
-lat=get.var.ncdf(nc, "LATITUDE_T") 
 
+ssh=ncvar_get(nc, "SSH") 
 
-ssh=get.var.ncdf(nc, "SSH") 
 temp11 <- ssh[ , ] 
 
 # plot as image
