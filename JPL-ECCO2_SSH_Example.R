@@ -1,43 +1,65 @@
+# https://journal.r-project.org/archive/2011-1/RJournal_2011-1_South.pdf
+# https://cran.r-project.org/web/packages/rworldmap/rworldmap.pdf
+
 library(ncdf4)
-library(maptools)
-
 library(RColorBrewer)
-library(lattice)
-library(raster)
-library(rasterVis)
+library(rworldmap)
 
+##
+urlpath='http://mrtee.europa.renci.org:8080/thredds/dodsC/DataLayers/'
+filen='JPL.ECCO2.SSH.1440x720.20140917.nc'
+url=paste(urlpath, filen,sep='')
 
-url='http://opendap.renci.org:1935/thredds/dodsC/oedata/SSH.1440x720.20140917.nc'
-url='http://mrtee.europa.renci.org:8080/thredds/dodsC/DataLayers/JPL.ECCO2.SSH.1440x720.20140917.nc'
-#url='http://localhost:8080/thredds/dodsC/DBTest/netCDF/SSH.1440x720.20140917.nc'
-
-
-nc=open.ncdf(url)
-
+nc=nc_open(url)
 lon=ncvar_get(nc,"LONGITUDE_T")
-# lon <- lon-180
+lon <- lon-180
 lat=ncvar_get(nc,"LATITUDE_T")
+ssh=ncvar_get(nc, "SSH")
+
+# reverse the y values
+ssh <-ssh[ ,nc$dim$LATITUDE_T$len:1 ]
+
+# swap east and west hemispheres
+i=nc$dim$LONGITUDE_T$len/2;
+s2 <- ssh[1:i , ]
+s1 <- ssh[(i+1):(i*2) , ]
+ssh2 <- rbind(s1, s2)
+
+# create gridTopology from the netCDF metadata
+offset = c(min(lon),min(lat))
+cellsize = c( abs(diff(lon[1:2])), abs(diff(lat[1:2])))
+
+# add cellsize/2 to offset
+# to convert from lower left referencing to centre
+offset = offset + cellsize/2
+cells.dim = c(nc$dim$LONGITUDE_T$len, nc$dim$LATITUDE_T$len)
+
+gt <- GridTopology(cellcentre.offset = offset,
+                   cellsize = cellsize,
+                   cells.dim = cells.dim )
+
+#create a vector to classify the data
+catMethod=seq(from=-2,to=2,by=.1)
+
+#create a colourPalette for all plots
+#-ve blue, 0 white, +ve yellow to red
+colourPalette=c('blue','lightblue','white',brewer.pal(9,'YlOrRd'))
+
+#create a spatialGridDataFrame
+gridVals <-data.frame(att=as.vector(ssh2))
+sGDF <-SpatialGridDataFrame(gt, data=gridVals)
 
 
-ssh=ncvar_get(nc, "SSH") 
+mapParams <- mapGriddedData(sGDF,
+                            nameColumnToPlot='att',
+                            catMethod=catMethod,
+                            colourPalette=colourPalette,
+                            addLegend=FALSE)
 
-temp11 <- ssh[ , ] 
+ #adding formatted legend
+ do.call(addMapLegend, c(mapParams, legendLabels="all", legendWidth=0.5, legendMar = 3))
 
-# plot as image
-#image(lon,lat,temp11) 
-#data(wrld_simpl)
-#plot(wrld_simpl,add=TRUE)
 
-# grid <- expand.grid(xlon=lon, ylat=lat)
-# xyz <- cbind(grid, temp11)
-# pj <- "+proj=lcc +lat_1=25.00 +lat_2=60.00 +lat_0=42.5 +lon_0=-100.00 +x_0=0 +y_0=0 +ellps=GRS80 +units=m +no_defs"
-
-# rast.ssh <- rasterFromXYZ(xyz, crs=pj) 
-
-f <- '/Users/bblanton/Desktop/Dropbox/bb/SSH.1440x720.20140917.nc'
-b <- brick(f,package="raster")
-library(maps)
-library(mapdata)
-library(mapproj)
-map(database= "world", col="grey80", fill=TRUE, projection="gilbert", ylim=c(-90,90), xlim=c(-180,180), orientation= c(90,0,225))
-
+title(filen)
+outputPlotType = 'png'
+savePlot(paste(filen,outputPlotType,sep='.'),type=outputPlotType)
