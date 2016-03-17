@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[12]:
+# In[7]:
 
 from mpl_toolkits.basemap import Basemap
 import netCDF4
@@ -11,22 +11,22 @@ import numpy.ma as ma
 import matplotlib.pyplot as plt
 from datetime import datetime
 import math as math
-#get_ipython().magic(u'matplotlib inline')
+get_ipython().magic(u'matplotlib inline')
 
 
-# In[4]:
+# In[8]:
 
-url='http://localhost:8080/thredds/dodsC/testAll/2004050300_eta_211.nc'
+url='http://mrtee.europa.renci.org:8080/thredds/dodsC/DataLayers/2004050300_eta_211.nc'
 nc=netCDF4.Dataset(url)
 print nc.variables.keys()
 
 
-# In[5]:
+# In[9]:
 
 print nc.variables['grid_number'][:]
 
 
-# In[6]:
+# In[10]:
 
 Lo1=nc.variables['Lo1'][:]
 La1=nc.variables['La1'][:]
@@ -37,7 +37,7 @@ Dy=nc.variables['Dy'][:]
 print Lo1, La1, Nx, Ny, Dx, Dy
 
 
-# In[7]:
+# In[11]:
 
 x = np.linspace(0, 1, Nx)
 y = np.linspace(0, 1, Ny)
@@ -46,7 +46,7 @@ z=nc.variables['Z_sfc'][0,:,:]
 print z.shape
 
 
-# In[8]:
+# In[12]:
 
 plt.pcolor(x,y,z)
 
@@ -56,7 +56,7 @@ plt.pcolor(x,y,z)
 #%pinfo Basemap
 
 
-# In[10]:
+# In[18]:
 
 llcrnrlon=-160    # lower-left corner, lon
 llcrnrlat=  20    # lower-left corner, lat
@@ -64,6 +64,9 @@ urcrnrlon= -60    # upper-right corner, lon
 urcrnrlat=  60    # upper-right corner, lat
 lon_0   =Lo1      # center of desired map domain (in degrees).
 lat_1   =La1      # first standard parallel for lambert conformal
+
+fig = plt.figure()
+ax = fig.add_axes([0.05,0.05,0.9,0.9])
 m = Basemap(llcrnrlon=llcrnrlon,
             llcrnrlat=llcrnrlat, 
             urcrnrlon=urcrnrlon,
@@ -75,12 +78,19 @@ m = Basemap(llcrnrlon=llcrnrlon,
             lon_0=Lo1)
 
 
-# In[11]:
+# In[19]:
 
 m.drawmapboundary(fill_color='0.8')
 m.drawcoastlines(linewidth=1.)
-pc=m.pcolor(z, cmap=plt.cm.jet, vmin=0, vmax=1000, latlon=True)
+im1 = m.pcolormesh(x,y,z,shading='flat',cmap=plt.cm.jet,latlon=True)
 
+m.drawparallels(np.arange(-90.,99.,30.))
+m.drawmeridians(np.arange(-180.,180.,60.))
+# add colorbar
+cb = m.colorbar(im1,"bottom", size="5%", pad="2%")
+# add a title.
+ax.set_title('SST and ICE analysis for %s'%date)
+# plt.show()    #  would need this in a python script to flush figure
 
 
 # In[ ]:
