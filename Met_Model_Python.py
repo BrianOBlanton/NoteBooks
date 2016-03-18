@@ -14,11 +14,13 @@ import math as math
 get_ipython().magic(u'matplotlib inline')
 
 
-# In[8]:
+# In[28]:
 
 url='http://mrtee.europa.renci.org:8080/thredds/dodsC/DataLayers/2004050300_eta_211.nc'
 nc=netCDF4.Dataset(url)
 print nc.variables.keys()
+date=nc.variables['valtime']
+print date[:]
 
 
 # In[9]:
