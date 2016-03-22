@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[2]:
+# In[1]:
 
 from mpl_toolkits.basemap import Basemap
 import netCDF4
@@ -14,7 +14,7 @@ import math as math
 get_ipython().magic(u'matplotlib inline')
 
 
-# In[3]:
+# In[2]:
 
 url='http://milas.marine.ie/thredds/dodsC/IMI_ROMS_HYDRO/AGGREGATE'
 nc=netCDF4.Dataset(url,fillval=np.nan)
@@ -23,7 +23,7 @@ print nc.variables.keys()
 tstr='IMI_ROMS_HYDRO/AGGREGATE'
 
 
-# In[12]:
+# In[3]:
 
 lon=nc.variables['longitude']
 lond=lon[:]
@@ -38,21 +38,22 @@ lo,la =np.meshgrid(lond,latd)
 latmn = np.mean(lat)
 
 
-# In[9]:
+# In[4]:
 
 print nc
 
 
-# In[4]:
+# In[8]:
 
-tidx=321
+tidx=100
 time=nc.variables['time']
+print time.shape
 dtime = netCDF4.num2date(time[tidx],time.units)
 datestr = dtime.strftime('%Y-%b-%d %H:%M')
 print datestr
 
 
-# In[5]:
+# In[9]:
 
 var=nc.variables[var_name]
 var_d=var[tidx,:,:]
@@ -66,7 +67,7 @@ vminmax=5
 print vmin,vmax,vminmax
 
 
-# In[8]:
+# In[10]:
 
 fig = plt.figure(figsize=(12,6), dpi=144)
 ax = fig.add_axes([0.1, 0.1, 0.8, 0.8])
