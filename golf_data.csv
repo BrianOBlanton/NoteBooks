@@ -1,0 +1,343 @@
+Date Inserted,Round Id,Course,Scorecard Id,Tee Type,Scorecard Type,Handicap Type,Handicap,Hole Id,Hole Number,Par,Stroke Index,Score,Putts,Drive Result,Penalty Strokes,Bunker Hit,Net Score,Strokes Taken
+2016-03-19T10:26:55+00:00,13779734,Occoneechee Golf Club,11726829,men,stroke play,basic handicap,36,423856,1,4,17,5,2,straight,0,FALSE,3,2
+2016-03-19T10:42:36+00:00,13779734,Occoneechee Golf Club,11726829,men,stroke play,basic handicap,36,423857,2,4,3,7,2,straight,0,FALSE,5,2
+2016-03-19T10:51:54+00:00,13779734,Occoneechee Golf Club,11726829,men,stroke play,basic handicap,36,423858,3,3,11,4,2,straight,0,FALSE,2,2
+2016-03-19T11:09:11+00:00,13779734,Occoneechee Golf Club,11726829,men,stroke play,basic handicap,36,423859,4,4,5,9,1,straight,0,FALSE,7,2
+2016-03-19T11:25:18+00:00,13779734,Occoneechee Golf Club,11726829,men,stroke play,basic handicap,36,423860,5,5,7,7,2,straight,0,FALSE,5,2
+2016-03-19T11:40:20+00:00,13779734,Occoneechee Golf Club,11726829,men,stroke play,basic handicap,36,423861,6,4,1,7,3,straight,0,FALSE,5,2
+2016-03-19T11:55:36+00:00,13779734,Occoneechee Golf Club,11726829,men,stroke play,basic handicap,36,423862,7,5,9,10,3,straight,1,TRUE,8,2
+2016-03-19T12:07:13+00:00,13779734,Occoneechee Golf Club,11726829,men,stroke play,basic handicap,36,423863,8,3,15,4,2,straight,0,FALSE,2,2
+2016-03-19T12:20:11+00:00,13779734,Occoneechee Golf Club,11726829,men,stroke play,basic handicap,36,423864,9,4,13,7,3,right,0,FALSE,5,2
+2016-03-19T12:52:02+00:00,13779734,Occoneechee Golf Club,11726829,men,stroke play,basic handicap,36,423865,10,3,16,5,2,right,0,FALSE,3,2
+2016-03-19T12:52:02+00:00,13779734,Occoneechee Golf Club,11726829,men,stroke play,basic handicap,36,423865,11,4,4,7,3,straight,0,FALSE,5,2
+2016-03-19T13:04:27+00:00,13779734,Occoneechee Golf Club,11726829,men,stroke play,basic handicap,36,423867,12,4,14,6,2,left,0,FALSE,4,2
+2016-03-19T13:19:38+00:00,13779734,Occoneechee Golf Club,11726829,men,stroke play,basic handicap,36,423868,13,4,12,7,2,right,1,FALSE,5,2
+2016-03-19T13:33:11+00:00,13779734,Occoneechee Golf Club,11726829,men,stroke play,basic handicap,36,423869,14,4,10,7,3,straight,0,FALSE,5,2
+2016-03-19T13:47:09+00:00,13779734,Occoneechee Golf Club,11726829,men,stroke play,basic handicap,36,423870,15,4,2,8,3,right,0,FALSE,6,2
+2016-03-19T13:57:05+00:00,13779734,Occoneechee Golf Club,11726829,men,stroke play,basic handicap,36,423871,16,3,8,5,2,left,0,FALSE,3,2
+2016-03-19T14:13:41+00:00,13779734,Occoneechee Golf Club,11726829,men,stroke play,basic handicap,36,423872,17,5,18,8,3,right,0,FALSE,6,2
+2016-03-19T14:25:36+00:00,13779734,Occoneechee Golf Club,11726829,men,stroke play,basic handicap,36,423873,18,4,6,6,3,left,0,FALSE,4,2
+2016-03-13T11:13:48+00:00,13736589,Twin Lakes Golf Course,11677866,men,stroke play,basic handicap,36,129558,1,5,3,6,2,straight,0,FALSE,4,2
+2016-03-13T11:30:55+00:00,13736589,Twin Lakes Golf Course,11677866,men,stroke play,basic handicap,36,129559,2,4,7,9,3,right,0,TRUE,7,2
+2016-03-13T11:42:07+00:00,13736589,Twin Lakes Golf Course,11677866,men,stroke play,basic handicap,36,129560,3,3,15,9,3,top,0,TRUE,7,2
+2016-03-13T11:55:30+00:00,13736589,Twin Lakes Golf Course,11677866,men,stroke play,basic handicap,36,129561,4,5,1,10,3,right,0,FALSE,8,2
+2016-03-13T12:10:41+00:00,13736589,Twin Lakes Golf Course,11677866,men,stroke play,basic handicap,36,129562,5,4,5,6,3,straight,0,FALSE,4,2
+2016-03-13T12:22:37+00:00,13736589,Twin Lakes Golf Course,11677866,men,stroke play,basic handicap,36,129563,6,3,17,4,2,right,0,FALSE,2,2
+2016-03-13T12:33:18+00:00,13736589,Twin Lakes Golf Course,11677866,men,stroke play,basic handicap,36,129565,7,4,13,5,3,right,0,FALSE,3,2
+2016-03-13T12:48:08+00:00,13736589,Twin Lakes Golf Course,11677866,men,stroke play,basic handicap,36,129567,8,4,11,7,3,straight,0,FALSE,5,2
+2016-03-13T13:04:36+00:00,13736589,Twin Lakes Golf Course,11677866,men,stroke play,basic handicap,36,129569,9,4,9,6,2,straight,0,TRUE,4,2
+2016-03-13T09:07:23+00:00,13734396,Twin Lakes Golf Course,11675252,men,stroke play,basic handicap,36,129558,1,5,3,8,1,straight,0,FALSE,6,2
+2016-03-13T09:19:07+00:00,13734396,Twin Lakes Golf Course,11675252,men,stroke play,basic handicap,36,129559,2,4,7,8,3,right,0,TRUE,6,2
+2016-03-13T09:29:44+00:00,13734396,Twin Lakes Golf Course,11675252,men,stroke play,basic handicap,36,129560,3,3,15,6,3,left,0,FALSE,4,2
+2016-03-13T09:46:08+00:00,13734396,Twin Lakes Golf Course,11675252,men,stroke play,basic handicap,36,129561,4,5,1,9,1,right,1,FALSE,7,2
+2016-03-13T09:59:43+00:00,13734396,Twin Lakes Golf Course,11675252,men,stroke play,basic handicap,36,129562,5,4,5,6,3,top,0,FALSE,4,2
+2016-03-13T10:12:06+00:00,13734396,Twin Lakes Golf Course,11675252,men,stroke play,basic handicap,36,129563,6,3,17,4,2,straight,0,FALSE,2,2
+2016-03-13T10:30:58+00:00,13734396,Twin Lakes Golf Course,11675252,men,stroke play,basic handicap,36,129565,7,4,13,7,2,left,0,FALSE,5,2
+2016-03-13T10:38:07+00:00,13734396,Twin Lakes Golf Course,11675252,men,stroke play,basic handicap,36,129567,8,4,11,7,3,right,0,FALSE,5,2
+2016-03-13T10:54:34+00:00,13734396,Twin Lakes Golf Course,11675252,men,stroke play,basic handicap,36,129569,9,4,9,4,1,straight,0,FALSE,2,2
+2016-02-27T10:37:09+00:00,13622966,Hillandale Golf Course,11547240,men,stroke play,basic handicap,36,77930,1,4,16,5,3,straight,0,FALSE,3,2
+2016-02-27T10:56:19+00:00,13622966,Hillandale Golf Course,11547240,men,stroke play,basic handicap,36,77933,2,5,3,8,3,straight,1,FALSE,6,2
+2016-02-27T11:11:56+00:00,13622966,Hillandale Golf Course,11547240,men,stroke play,basic handicap,36,77936,3,4,2,7,2,top,0,FALSE,5,2
+2016-02-27T11:22:47+00:00,13622966,Hillandale Golf Course,11547240,men,stroke play,basic handicap,36,77939,4,3,17,6,4,top,0,TRUE,4,2
+2016-02-27T11:35:05+00:00,13622966,Hillandale Golf Course,11547240,men,stroke play,basic handicap,36,77942,5,4,18,8,2,right,4,FALSE,6,2
+2016-02-27T11:52:13+00:00,13622966,Hillandale Golf Course,11547240,men,stroke play,basic handicap,36,77945,6,4,15,6,3,right,0,FALSE,4,2
+2016-02-27T12:05:11+00:00,13622966,Hillandale Golf Course,11547240,men,stroke play,basic handicap,36,77948,7,3,5,5,2,top,0,TRUE,3,2
+2016-02-27T12:18:17+00:00,13622966,Hillandale Golf Course,11547240,men,stroke play,basic handicap,36,77951,8,4,13,6,3,straight,0,FALSE,4,2
+2016-02-27T12:33:33+00:00,13622966,Hillandale Golf Course,11547240,men,stroke play,basic handicap,36,77952,9,4,7,7,2,straight,0,FALSE,5,2
+2016-02-07T12:26:35+00:00,13511158,Hillandale Golf Course,11417257,men,stroke play,basic handicap,36,77930,1,4,16,5,2,straight,0,FALSE,3,2
+2016-02-07T12:41:47+00:00,13511158,Hillandale Golf Course,11417257,men,stroke play,basic handicap,36,77933,2,5,3,6,1,right,1,FALSE,4,2
+2016-02-07T12:55:48+00:00,13511158,Hillandale Golf Course,11417257,men,stroke play,basic handicap,36,77936,3,4,2,7,1,right,1,FALSE,5,2
+2016-02-07T13:10:53+00:00,13511158,Hillandale Golf Course,11417257,men,stroke play,basic handicap,36,77939,4,3,17,7,2,right,0,TRUE,5,2
+2016-02-07T13:23:29+00:00,13511158,Hillandale Golf Course,11417257,men,stroke play,basic handicap,36,77942,5,4,18,5,2,straight,0,FALSE,3,2
+2016-02-07T13:42:23+00:00,13511158,Hillandale Golf Course,11417257,men,stroke play,basic handicap,36,77945,6,4,15,7,4,straight,0,FALSE,5,2
+2016-02-07T13:54:19+00:00,13511158,Hillandale Golf Course,11417257,men,stroke play,basic handicap,36,77948,7,3,5,8,3,right,0,FALSE,6,2
+2016-02-07T14:06:18+00:00,13511158,Hillandale Golf Course,11417257,men,stroke play,basic handicap,36,77951,8,4,13,6,2,straight,1,FALSE,4,2
+2016-02-07T14:22:33+00:00,13511158,Hillandale Golf Course,11417257,men,stroke play,basic handicap,36,77952,9,4,7,9,2,straight,0,FALSE,7,2
+2016-02-07T14:44:40+00:00,13511158,Hillandale Golf Course,11417257,men,stroke play,basic handicap,36,77954,10,4,1,7,2,right,0,FALSE,5,2
+2016-02-07T15:00:55+00:00,13511158,Hillandale Golf Course,11417257,men,stroke play,basic handicap,36,77956,11,4,6,7,3,right,0,FALSE,5,2
+2016-02-07T15:16:38+00:00,13511158,Hillandale Golf Course,11417257,men,stroke play,basic handicap,36,77958,12,4,14,6,2,right,0,FALSE,4,2
+2016-02-07T15:32:10+00:00,13511158,Hillandale Golf Course,11417257,men,stroke play,basic handicap,36,77960,13,4,10,6,3,top,0,FALSE,4,2
+2016-02-07T15:51:15+00:00,13511158,Hillandale Golf Course,11417257,men,stroke play,basic handicap,36,77962,14,5,8,8,2,left,0,FALSE,6,2
+2016-02-07T16:01:33+00:00,13511158,Hillandale Golf Course,11417257,men,stroke play,basic handicap,36,77963,15,3,4,6,3,top,0,FALSE,4,2
+2016-02-07T16:15:16+00:00,13511158,Hillandale Golf Course,11417257,men,stroke play,basic handicap,36,77964,16,4,12,6,2,right,0,FALSE,4,2
+2016-02-07T16:27:48+00:00,13511158,Hillandale Golf Course,11417257,men,stroke play,basic handicap,36,77966,17,3,11,4,2,right,0,FALSE,2,2
+2016-02-07T16:45:32+00:00,13511158,Hillandale Golf Course,11417257,men,stroke play,basic handicap,36,77967,18,5,9,8,3,right,0,FALSE,6,2
+2016-01-30T11:34:08+00:00,13468903,Hillandale Golf Course,11367555,men,stroke play,basic handicap,36,77930,1,4,16,4,2,straight,0,FALSE,2,2
+2016-01-30T11:57:31+00:00,13468903,Hillandale Golf Course,11367555,men,stroke play,basic handicap,36,77933,2,5,3,8,3,right,1,FALSE,6,2
+2016-01-30T12:14:42+00:00,13468903,Hillandale Golf Course,11367555,men,stroke play,basic handicap,36,77936,3,4,2,9,3,right,1,FALSE,7,2
+2016-01-30T12:29:20+00:00,13468903,Hillandale Golf Course,11367555,men,stroke play,basic handicap,36,77939,4,3,17,5,3,right,1,FALSE,3,2
+2016-01-30T12:43:06+00:00,13468903,Hillandale Golf Course,11367555,men,stroke play,basic handicap,36,77942,5,4,18,6,3,top,0,FALSE,4,2
+2016-01-30T12:57:01+00:00,13468903,Hillandale Golf Course,11367555,men,stroke play,basic handicap,36,77945,6,4,15,8,3,right,1,FALSE,6,2
+2016-01-30T13:08:12+00:00,13468903,Hillandale Golf Course,11367555,men,stroke play,basic handicap,36,77948,7,3,5,7,3,left,0,FALSE,5,2
+2016-01-30T13:24:53+00:00,13468903,Hillandale Golf Course,11367555,men,stroke play,basic handicap,36,77951,8,4,13,6,2,right,0,FALSE,4,2
+2016-01-30T13:38:21+00:00,13468903,Hillandale Golf Course,11367555,men,stroke play,basic handicap,36,77952,9,4,7,7,3,straight,0,FALSE,5,2
+2015-11-22T11:08:22+00:00,13143105,Hillandale Golf Course,10986000,men,stroke play,basic handicap,36,77930,1,4,16,4,1,left,0,FALSE,2,2
+2015-11-22T11:22:47+00:00,13143105,Hillandale Golf Course,10986000,men,stroke play,basic handicap,36,77933,2,5,3,8,2,chunk,2,FALSE,6,2
+2015-11-22T11:37:56+00:00,13143105,Hillandale Golf Course,10986000,men,stroke play,basic handicap,36,77936,3,4,2,7,2,straight,0,FALSE,5,2
+2015-11-22T11:46:42+00:00,13143105,Hillandale Golf Course,10986000,men,stroke play,basic handicap,36,77939,4,3,17,5,2,straight,0,FALSE,3,2
+2015-11-22T11:58:17+00:00,13143105,Hillandale Golf Course,10986000,men,stroke play,basic handicap,36,77942,5,4,18,5,2,straight,0,FALSE,3,2
+2015-11-22T12:12:28+00:00,13143105,Hillandale Golf Course,10986000,men,stroke play,basic handicap,36,77945,6,4,15,8,3,left,1,FALSE,6,2
+2015-11-22T12:23:12+00:00,13143105,Hillandale Golf Course,10986000,men,stroke play,basic handicap,36,77948,7,3,5,6,3,chunk,0,FALSE,4,2
+2015-11-22T12:35:15+00:00,13143105,Hillandale Golf Course,10986000,men,stroke play,basic handicap,36,77951,8,4,13,6,2,straight,0,FALSE,4,2
+2015-11-22T12:50:24+00:00,13143105,Hillandale Golf Course,10986000,men,stroke play,basic handicap,36,77952,9,4,7,9,3,right,1,FALSE,7,2
+2015-11-22T13:08:39+00:00,13143105,Hillandale Golf Course,10986000,men,stroke play,basic handicap,36,77954,10,4,1,9,3,left,0,FALSE,7,2
+2015-11-22T13:22:56+00:00,13143105,Hillandale Golf Course,10986000,men,stroke play,basic handicap,36,77956,11,4,6,8,3,straight,0,FALSE,6,2
+2015-11-22T13:36:41+00:00,13143105,Hillandale Golf Course,10986000,men,stroke play,basic handicap,36,77958,12,4,14,9,3,right,1,FALSE,7,2
+2015-11-22T13:50:39+00:00,13143105,Hillandale Golf Course,10986000,men,stroke play,basic handicap,36,77960,13,4,10,6,2,chunk,0,FALSE,4,2
+2015-11-22T14:07:55+00:00,13143105,Hillandale Golf Course,10986000,men,stroke play,basic handicap,36,77962,14,5,8,10,3,right,1,TRUE,8,2
+2015-11-22T14:18:32+00:00,13143105,Hillandale Golf Course,10986000,men,stroke play,basic handicap,36,77963,15,3,4,5,3,straight,0,FALSE,3,2
+2015-11-22T14:31:51+00:00,13143105,Hillandale Golf Course,10986000,men,stroke play,basic handicap,36,77964,16,4,12,10,3,right,1,TRUE,8,2
+2015-11-22T14:44:00+00:00,13143105,Hillandale Golf Course,10986000,men,stroke play,basic handicap,36,77966,17,3,11,4,2,straight,0,FALSE,2,2
+2015-11-22T15:00:24+00:00,13143105,Hillandale Golf Course,10986000,men,stroke play,basic handicap,36,77967,18,5,9,9,3,right,1,FALSE,7,2
+2015-11-06T13:49:43+00:00,13037247,Hillandale Golf Course,10864050,men,stroke play,basic handicap,36,77930,1,4,16,4,1,top,0,FALSE,2,2
+2015-11-06T14:13:14+00:00,13037247,Hillandale Golf Course,10864050,men,stroke play,basic handicap,36,77933,2,5,3,7,2,left,0,FALSE,5,2
+2015-11-06T16:13:32+00:00,13037247,Hillandale Golf Course,10864050,men,stroke play,basic handicap,36,77936,3,4,2,7,3,straight,0,TRUE,5,2
+2015-11-06T16:13:44+00:00,13037247,Hillandale Golf Course,10864050,men,stroke play,basic handicap,36,77939,4,3,17,5,2,straight,0,FALSE,3,2
+2015-11-06T16:13:55+00:00,13037247,Hillandale Golf Course,10864050,men,stroke play,basic handicap,36,77942,5,4,18,6,3,straight,0,FALSE,4,2
+2015-11-06T16:14:03+00:00,13037247,Hillandale Golf Course,10864050,men,stroke play,basic handicap,36,77945,6,4,15,7,3,straight,0,FALSE,5,2
+2015-11-06T16:14:13+00:00,13037247,Hillandale Golf Course,10864050,men,stroke play,basic handicap,36,77948,7,3,5,4,3,straight,0,FALSE,2,2
+2015-11-06T16:14:28+00:00,13037247,Hillandale Golf Course,10864050,men,stroke play,basic handicap,36,77951,8,4,13,8,3,straight,0,FALSE,6,2
+2015-11-06T16:14:42+00:00,13037247,Hillandale Golf Course,10864050,men,stroke play,basic handicap,36,77952,9,4,7,8,3,straight,0,FALSE,6,2
+2015-11-01T09:59:01+00:00,12996753,Hillandale Golf Course,10818622,men,stroke play,basic handicap,36,77930,1,4,16,7,2,straight,0,FALSE,5,2
+2015-11-01T10:13:51+00:00,12996753,Hillandale Golf Course,10818622,men,stroke play,basic handicap,36,77933,2,5,3,7,2,left,1,FALSE,5,2
+2015-11-01T10:29:24+00:00,12996753,Hillandale Golf Course,10818622,men,stroke play,basic handicap,36,77936,3,4,2,7,2,left,1,FALSE,5,2
+2015-11-01T10:36:43+00:00,12996753,Hillandale Golf Course,10818622,men,stroke play,basic handicap,36,77939,4,3,17,5,3,top,0,FALSE,3,2
+2015-11-01T10:48:54+00:00,12996753,Hillandale Golf Course,10818622,men,stroke play,basic handicap,36,77942,5,4,18,7,2,straight,0,FALSE,5,2
+2015-11-01T11:01:00+00:00,12996753,Hillandale Golf Course,10818622,men,stroke play,basic handicap,36,77945,6,4,15,8,2,straight,1,FALSE,6,2
+2015-11-01T11:09:46+00:00,12996753,Hillandale Golf Course,10818622,men,stroke play,basic handicap,36,77948,7,3,5,6,3,top,0,FALSE,4,2
+2015-11-01T11:21:29+00:00,12996753,Hillandale Golf Course,10818622,men,stroke play,basic handicap,36,77951,8,4,13,8,3,right,1,FALSE,6,2
+2015-11-01T11:33:53+00:00,12996753,Hillandale Golf Course,10818622,men,stroke play,basic handicap,36,77952,9,4,7,8,4,straight,0,FALSE,6,2
+2015-10-11T09:42:04+00:00,12796888,Hillandale Golf Course,10591511,men,stroke play,basic handicap,36,77930,1,4,16,6,3,straight,0,FALSE,4,2
+2015-10-11T09:59:50+00:00,12796888,Hillandale Golf Course,10591511,men,stroke play,basic handicap,36,77933,2,5,3,9,3,top,3,FALSE,7,2
+2015-10-11T10:21:17+00:00,12796888,Hillandale Golf Course,10591511,men,stroke play,basic handicap,36,77936,3,4,2,10,3,straight,0,FALSE,8,2
+2015-10-11T10:31:07+00:00,12796888,Hillandale Golf Course,10591511,men,stroke play,basic handicap,36,77939,4,3,17,5,2,right,1,FALSE,3,2
+2015-10-11T10:45:42+00:00,12796888,Hillandale Golf Course,10591511,men,stroke play,basic handicap,36,77942,5,4,18,8,3,right,1,FALSE,6,2
+2015-10-11T10:58:24+00:00,12796888,Hillandale Golf Course,10591511,men,stroke play,basic handicap,36,77945,6,4,15,7,3,straight,1,FALSE,5,2
+2015-10-11T11:08:47+00:00,12796888,Hillandale Golf Course,10591511,men,stroke play,basic handicap,36,77948,7,3,5,6,3,right,0,FALSE,4,2
+2015-10-11T11:32:28+00:00,12796888,Hillandale Golf Course,10591511,men,stroke play,basic handicap,36,77951,8,4,13,9,3,straight,2,FALSE,7,2
+2015-10-11T11:42:17+00:00,12796888,Hillandale Golf Course,10591511,men,stroke play,basic handicap,36,77952,9,4,7,9,3,straight,0,FALSE,7,2
+2015-10-11T12:03:14+00:00,12796888,Hillandale Golf Course,10591511,men,stroke play,basic handicap,36,77954,10,4,1,8,2,straight,0,FALSE,6,2
+2015-10-11T12:19:02+00:00,12796888,Hillandale Golf Course,10591511,men,stroke play,basic handicap,36,77956,11,4,6,8,2,right,0,FALSE,6,2
+2015-10-11T12:33:55+00:00,12796888,Hillandale Golf Course,10591511,men,stroke play,basic handicap,36,77958,12,4,14,4,2,straight,0,FALSE,2,2
+2015-10-11T12:49:36+00:00,12796888,Hillandale Golf Course,10591511,men,stroke play,basic handicap,36,77960,13,4,10,7,3,straight,0,FALSE,5,2
+2015-10-11T13:07:08+00:00,12796888,Hillandale Golf Course,10591511,men,stroke play,basic handicap,36,77962,14,5,8,8,3,top,0,FALSE,6,2
+2015-10-11T13:19:03+00:00,12796888,Hillandale Golf Course,10591511,men,stroke play,basic handicap,36,77963,15,3,4,5,2,left,1,FALSE,3,2
+2015-10-11T13:34:11+00:00,12796888,Hillandale Golf Course,10591511,men,stroke play,basic handicap,36,77964,16,4,12,8,3,straight,0,FALSE,6,2
+2015-10-11T13:38:41+00:00,12796888,Hillandale Golf Course,10591511,men,stroke play,basic handicap,36,77966,17,3,11,6,3,left,0,FALSE,4,2
+2015-10-11T13:59:45+00:00,12796888,Hillandale Golf Course,10591511,men,stroke play,basic handicap,36,77967,18,5,9,8,3,right,1,FALSE,6,2
+2015-09-19T18:01:08+00:00,12537423,Hillandale Golf Course,10298810,men,stroke play,basic handicap,0,77930,1,4,16,6,3,straight,,FALSE,6,0
+2015-09-19T18:01:08+00:00,12537423,Hillandale Golf Course,10298810,men,stroke play,basic handicap,0,77933,2,5,3,7,2,straight,1,FALSE,7,0
+2015-09-19T18:01:08+00:00,12537423,Hillandale Golf Course,10298810,men,stroke play,basic handicap,0,77936,3,4,2,7,3,straight,,FALSE,7,0
+2015-09-19T18:01:08+00:00,12537423,Hillandale Golf Course,10298810,men,stroke play,basic handicap,0,77939,4,3,17,6,3,right,,FALSE,6,0
+2015-09-19T18:01:08+00:00,12537423,Hillandale Golf Course,10298810,men,stroke play,basic handicap,0,77942,5,4,18,6,2,right,,FALSE,6,0
+2015-09-19T18:01:08+00:00,12537423,Hillandale Golf Course,10298810,men,stroke play,basic handicap,0,77945,6,4,15,5,2,right,,FALSE,5,0
+2015-09-19T18:01:08+00:00,12537423,Hillandale Golf Course,10298810,men,stroke play,basic handicap,0,77948,7,3,5,6,3,straight,,FALSE,6,0
+2015-09-19T18:01:08+00:00,12537423,Hillandale Golf Course,10298810,men,stroke play,basic handicap,0,77951,8,4,13,9,1,straight,2,FALSE,9,0
+2015-09-19T18:01:08+00:00,12537423,Hillandale Golf Course,10298810,men,stroke play,basic handicap,0,77952,9,4,7,5,2,straight,,FALSE,5,0
+2015-09-19T18:01:08+00:00,12537423,Hillandale Golf Course,10298810,men,stroke play,basic handicap,0,77954,10,4,1,7,3,left,,FALSE,7,0
+2015-09-19T18:01:08+00:00,12537423,Hillandale Golf Course,10298810,men,stroke play,basic handicap,0,77956,11,4,6,6,3,straight,,FALSE,6,0
+2015-09-19T18:01:08+00:00,12537423,Hillandale Golf Course,10298810,men,stroke play,basic handicap,0,77958,12,4,14,6,3,right,1,FALSE,6,0
+2015-09-19T18:01:08+00:00,12537423,Hillandale Golf Course,10298810,men,stroke play,basic handicap,0,77960,13,4,10,6,3,straight,,FALSE,6,0
+2015-09-19T18:01:08+00:00,12537423,Hillandale Golf Course,10298810,men,stroke play,basic handicap,0,77962,14,5,8,7,2,straight,,FALSE,7,0
+2015-09-19T18:01:08+00:00,12537423,Hillandale Golf Course,10298810,men,stroke play,basic handicap,0,77963,15,3,4,6,3,chunk,,FALSE,6,0
+2015-09-19T18:01:08+00:00,12537423,Hillandale Golf Course,10298810,men,stroke play,basic handicap,0,77964,16,4,12,8,2,,,TRUE,8,0
+2015-09-19T18:01:08+00:00,12537423,Hillandale Golf Course,10298810,men,stroke play,basic handicap,0,77966,17,3,11,4,2,straight,,FALSE,4,0
+2015-09-19T18:01:08+00:00,12537423,Hillandale Golf Course,10298810,men,stroke play,basic handicap,0,77967,18,5,9,7,3,right,,FALSE,7,0
+2015-09-13T09:57:01+00:00,12444889,Hillandale Golf Course,10195919,men,stroke play,basic handicap,36,77930,1,4,16,6,4,straight,0,FALSE,4,2
+2015-09-13T10:17:38+00:00,12444889,Hillandale Golf Course,10195919,men,stroke play,basic handicap,36,77933,2,5,3,11,4,left,3,FALSE,9,2
+2015-09-13T10:33:02+00:00,12444889,Hillandale Golf Course,10195919,men,stroke play,basic handicap,36,77936,3,4,2,11,2,left,2,FALSE,9,2
+2015-09-13T10:44:34+00:00,12444889,Hillandale Golf Course,10195919,men,stroke play,basic handicap,36,77939,4,3,17,4,2,right,0,FALSE,2,2
+2015-09-13T10:57:17+00:00,12444889,Hillandale Golf Course,10195919,men,stroke play,basic handicap,36,77942,5,4,18,6,3,left,0,FALSE,4,2
+2015-09-13T11:12:49+00:00,12444889,Hillandale Golf Course,10195919,men,stroke play,basic handicap,36,77945,6,4,15,8,3,straight,0,FALSE,6,2
+2015-09-13T11:24:49+00:00,12444889,Hillandale Golf Course,10195919,men,stroke play,basic handicap,36,77948,7,3,5,6,3,straight,0,FALSE,4,2
+2015-09-13T11:39:32+00:00,12444889,Hillandale Golf Course,10195919,men,stroke play,basic handicap,36,77951,8,4,13,5,2,straight,0,FALSE,3,2
+2015-09-13T11:55:04+00:00,12444889,Hillandale Golf Course,10195919,men,stroke play,basic handicap,36,77952,9,4,7,8,3,left,1,FALSE,6,2
+2015-09-13T12:15:53+00:00,12444889,Hillandale Golf Course,10195919,men,stroke play,basic handicap,36,77954,10,4,1,11,3,right,1,FALSE,9,2
+2015-09-13T12:30:36+00:00,12444889,Hillandale Golf Course,10195919,men,stroke play,basic handicap,36,77956,11,4,6,8,2,right,2,TRUE,6,2
+2015-09-13T12:45:20+00:00,12444889,Hillandale Golf Course,10195919,men,stroke play,basic handicap,36,77958,12,4,14,7,3,straight,0,FALSE,5,2
+2015-09-13T12:59:07+00:00,12444889,Hillandale Golf Course,10195919,men,stroke play,basic handicap,36,77960,13,4,10,7,3,straight,0,FALSE,5,2
+2015-09-13T13:15:25+00:00,12444889,Hillandale Golf Course,10195919,men,stroke play,basic handicap,36,77962,14,5,8,7,3,straight,0,FALSE,5,2
+2015-09-13T13:24:41+00:00,12444889,Hillandale Golf Course,10195919,men,stroke play,basic handicap,36,77963,15,3,4,5,2,left,0,FALSE,3,2
+2015-09-13T13:40:01+00:00,12444889,Hillandale Golf Course,10195919,men,stroke play,basic handicap,36,77964,16,4,12,5,2,left,0,FALSE,3,2
+2015-09-13T13:57:33+00:00,12444889,Hillandale Golf Course,10195919,men,stroke play,basic handicap,36,77966,17,3,11,5,2,right,0,FALSE,3,2
+2015-09-13T14:13:26+00:00,12444889,Hillandale Golf Course,10195919,men,stroke play,basic handicap,36,77967,18,5,9,10,3,right,1,TRUE,8,2
+2015-09-06T08:22:57+00:00,12331213,Twin Lakes Golf Course,10067113,men,stroke play,basic handicap,36,129558,1,5,3,5,1,right,0,TRUE,3,2
+2015-09-06T08:38:19+00:00,12331213,Twin Lakes Golf Course,10067113,men,stroke play,basic handicap,36,129559,2,4,7,6,3,right,0,TRUE,4,2
+2015-09-06T08:49:32+00:00,12331213,Twin Lakes Golf Course,10067113,men,stroke play,basic handicap,36,129560,3,3,15,4,2,straight,0,FALSE,2,2
+2015-09-06T09:05:20+00:00,12331213,Twin Lakes Golf Course,10067113,men,stroke play,basic handicap,36,129561,4,5,1,7,3,straight,0,FALSE,5,2
+2015-09-06T09:19:20+00:00,12331213,Twin Lakes Golf Course,10067113,men,stroke play,basic handicap,36,129562,5,4,5,6,2,right,0,TRUE,4,2
+2015-09-06T09:26:50+00:00,12331213,Twin Lakes Golf Course,10067113,men,stroke play,basic handicap,36,129563,6,3,17,6,3,left,0,TRUE,4,2
+2015-09-06T09:38:22+00:00,12331213,Twin Lakes Golf Course,10067113,men,stroke play,basic handicap,36,129565,7,4,13,4,2,straight,0,FALSE,2,2
+2015-09-06T09:52:25+00:00,12331213,Twin Lakes Golf Course,10067113,men,stroke play,basic handicap,36,129567,8,4,11,4,2,left,0,TRUE,2,2
+2015-09-06T10:08:51+00:00,12331213,Twin Lakes Golf Course,10067113,men,stroke play,basic handicap,36,129569,9,4,9,8,3,straight,0,TRUE,6,2
+2015-08-30T08:44:13+00:00,12220544,Hillandale Golf Course,9941667,men,stroke play,basic handicap,36,77930,1,4,16,5,2,right,1,FALSE,3,2
+2015-08-30T09:03:39+00:00,12220544,Hillandale Golf Course,9941667,men,stroke play,basic handicap,36,77933,2,5,3,8,4,straight,0,FALSE,6,2
+2015-08-30T09:19:32+00:00,12220544,Hillandale Golf Course,9941667,men,stroke play,basic handicap,36,77936,3,4,2,10,4,straight,0,FALSE,8,2
+2015-08-30T09:31:15+00:00,12220544,Hillandale Golf Course,9941667,men,stroke play,basic handicap,36,77939,4,3,17,4,2,left,0,FALSE,2,2
+2015-08-30T09:43:18+00:00,12220544,Hillandale Golf Course,9941667,men,stroke play,basic handicap,36,77942,5,4,18,8,3,left,1,FALSE,6,2
+2015-08-30T09:58:20+00:00,12220544,Hillandale Golf Course,9941667,men,stroke play,basic handicap,36,77945,6,4,15,7,2,straight,0,FALSE,5,2
+2015-08-30T10:08:45+00:00,12220544,Hillandale Golf Course,9941667,men,stroke play,basic handicap,36,77948,7,3,5,6,3,straight,0,FALSE,4,2
+2015-08-30T10:22:29+00:00,12220544,Hillandale Golf Course,9941667,men,stroke play,basic handicap,36,77951,8,4,13,5,3,straight,0,FALSE,3,2
+2015-08-30T10:36:55+00:00,12220544,Hillandale Golf Course,9941667,men,stroke play,basic handicap,36,77952,9,4,7,6,3,right,0,FALSE,4,2
+2015-08-30T10:56:42+00:00,12220544,Hillandale Golf Course,9941667,men,stroke play,basic handicap,36,77954,10,4,1,10,3,right,0,FALSE,8,2
+2015-08-30T11:10:46+00:00,12220544,Hillandale Golf Course,9941667,men,stroke play,basic handicap,36,77956,11,4,6,8,3,right,1,FALSE,6,2
+2015-08-30T11:28:47+00:00,12220544,Hillandale Golf Course,9941667,men,stroke play,basic handicap,36,77958,12,4,14,10,3,left,0,FALSE,8,2
+2015-08-30T11:43:55+00:00,12220544,Hillandale Golf Course,9941667,men,stroke play,basic handicap,36,77960,13,4,10,6,3,left,1,FALSE,4,2
+2015-08-30T11:59:55+00:00,12220544,Hillandale Golf Course,9941667,men,stroke play,basic handicap,36,77962,14,5,8,9,2,straight,0,TRUE,7,2
+2015-08-30T12:10:56+00:00,12220544,Hillandale Golf Course,9941667,men,stroke play,basic handicap,36,77963,15,3,4,7,3,straight,0,FALSE,5,2
+2015-08-30T12:23:46+00:00,12220544,Hillandale Golf Course,9941667,men,stroke play,basic handicap,36,77964,16,4,12,6,4,straight,0,FALSE,4,2
+2015-08-30T12:36:26+00:00,12220544,Hillandale Golf Course,9941667,men,stroke play,basic handicap,36,77966,17,3,11,4,2,straight,0,FALSE,2,2
+2015-08-30T12:52:54+00:00,12220544,Hillandale Golf Course,9941667,men,stroke play,basic handicap,36,77967,18,5,9,8,3,straight,0,FALSE,6,2
+2015-08-23T08:34:39+00:00,12098715,Hillandale Golf Course,9804814,men,stroke play,basic handicap,36,77930,1,4,16,5,2,straight,0,FALSE,3,2
+2015-08-23T08:51:13+00:00,12098715,Hillandale Golf Course,9804814,men,stroke play,basic handicap,36,77933,2,5,3,7,3,straight,0,FALSE,5,2
+2015-08-23T09:08:10+00:00,12098715,Hillandale Golf Course,9804814,men,stroke play,basic handicap,36,77936,3,4,2,8,3,left,1,FALSE,6,2
+2015-08-23T09:16:31+00:00,12098715,Hillandale Golf Course,9804814,men,stroke play,basic handicap,36,77939,4,3,17,5,2,left,0,FALSE,3,2
+2015-08-23T09:31:17+00:00,12098715,Hillandale Golf Course,9804814,men,stroke play,basic handicap,36,77942,5,4,18,10,4,right,2,FALSE,8,2
+2015-08-23T09:45:51+00:00,12098715,Hillandale Golf Course,9804814,men,stroke play,basic handicap,36,77945,6,4,15,12,4,right,2,FALSE,10,2
+2015-08-23T09:56:05+00:00,12098715,Hillandale Golf Course,9804814,men,stroke play,basic handicap,36,77948,7,3,5,5,2,right,0,TRUE,3,2
+2015-08-23T10:09:07+00:00,12098715,Hillandale Golf Course,9804814,men,stroke play,basic handicap,36,77951,8,4,13,5,2,left,0,FALSE,3,2
+2015-08-23T10:23:48+00:00,12098715,Hillandale Golf Course,9804814,men,stroke play,basic handicap,36,77952,9,4,7,5,2,right,0,FALSE,3,2
+2015-08-23T10:42:47+00:00,12098715,Hillandale Golf Course,9804814,men,stroke play,basic handicap,36,77954,10,4,1,7,3,right,0,FALSE,5,2
+2015-08-23T10:57:50+00:00,12098715,Hillandale Golf Course,9804814,men,stroke play,basic handicap,36,77956,11,4,6,8,3,right,1,FALSE,6,2
+2015-08-23T11:11:48+00:00,12098715,Hillandale Golf Course,9804814,men,stroke play,basic handicap,36,77958,12,4,14,4,2,left,0,FALSE,2,2
+2015-08-23T11:26:19+00:00,12098715,Hillandale Golf Course,9804814,men,stroke play,basic handicap,36,77960,13,4,10,5,3,straight,0,FALSE,3,2
+2015-08-23T11:45:09+00:00,12098715,Hillandale Golf Course,9804814,men,stroke play,basic handicap,36,77962,14,5,8,10,3,right,0,TRUE,8,2
+2015-08-23T11:54:42+00:00,12098715,Hillandale Golf Course,9804814,men,stroke play,basic handicap,36,77963,15,3,4,4,2,straight,0,FALSE,2,2
+2015-08-23T12:08:17+00:00,12098715,Hillandale Golf Course,9804814,men,stroke play,basic handicap,36,77964,16,4,12,5,1,right,0,FALSE,3,2
+2015-08-23T12:38:24+00:00,12098715,Hillandale Golf Course,9804814,men,stroke play,basic handicap,36,77966,17,3,11,6,3,straight,0,FALSE,4,2
+2015-08-23T12:39:08+00:00,12098715,Hillandale Golf Course,9804814,men,stroke play,basic handicap,36,77967,18,5,9,8,2,straight,0,TRUE,6,2
+2015-08-08T09:28:17+00:00,11830335,Hillandale Golf Course,9502384,men,stroke play,basic handicap,36,77930,1,4,16,6,4,straight,0,FALSE,4,2
+2015-08-08T09:52:01+00:00,11830335,Hillandale Golf Course,9502384,men,stroke play,basic handicap,36,77933,2,5,3,7,2,straight,0,TRUE,5,2
+2015-08-08T10:10:16+00:00,11830335,Hillandale Golf Course,9502384,men,stroke play,basic handicap,36,77936,3,4,2,7,3,right,0,FALSE,5,2
+2015-08-08T10:24:59+00:00,11830335,Hillandale Golf Course,9502384,men,stroke play,basic handicap,36,77939,4,3,17,5,3,left,0,FALSE,3,2
+2015-08-08T10:39:03+00:00,11830335,Hillandale Golf Course,9502384,men,stroke play,basic handicap,36,77942,5,4,18,8,3,straight,1,FALSE,6,2
+2015-08-08T10:53:18+00:00,11830335,Hillandale Golf Course,9502384,men,stroke play,basic handicap,36,77945,6,4,15,6,3,left,0,FALSE,4,2
+2015-08-08T11:05:40+00:00,11830335,Hillandale Golf Course,9502384,men,stroke play,basic handicap,36,77948,7,3,5,6,3,right,0,FALSE,4,2
+2015-08-08T11:17:32+00:00,11830335,Hillandale Golf Course,9502384,men,stroke play,basic handicap,36,77951,8,4,13,6,2,left,0,FALSE,4,2
+2015-08-08T11:34:30+00:00,11830335,Hillandale Golf Course,9502384,men,stroke play,basic handicap,36,77952,9,4,7,7,2,right,1,FALSE,5,2
+2015-07-26T08:23:04+00:00,11603570,Hillandale Golf Course,9247244,men,stroke play,basic handicap,36,77930,1,4,16,7,3,straight,0,FALSE,5,2
+2015-07-26T08:42:27+00:00,11603570,Hillandale Golf Course,9247244,men,stroke play,basic handicap,36,77933,2,5,3,9,4,left,1,FALSE,7,2
+2015-07-26T08:59:02+00:00,11603570,Hillandale Golf Course,9247244,men,stroke play,basic handicap,36,77936,3,4,2,6,3,straight,0,FALSE,4,2
+2015-07-26T09:11:22+00:00,11603570,Hillandale Golf Course,9247244,men,stroke play,basic handicap,36,77939,4,3,17,6,3,straight,0,FALSE,4,2
+2015-07-26T09:24:19+00:00,11603570,Hillandale Golf Course,9247244,men,stroke play,basic handicap,36,77942,5,4,18,8,3,left,1,FALSE,6,2
+2015-07-26T09:40:56+00:00,11603570,Hillandale Golf Course,9247244,men,stroke play,basic handicap,36,77945,6,4,15,8,3,straight,1,FALSE,6,2
+2015-07-26T09:50:02+00:00,11603570,Hillandale Golf Course,9247244,men,stroke play,basic handicap,36,77948,7,3,5,7,3,straight,0,FALSE,5,2
+2015-07-26T10:04:06+00:00,11603570,Hillandale Golf Course,9247244,men,stroke play,basic handicap,36,77951,8,4,13,10,3,right,2,FALSE,8,2
+2015-07-26T10:19:42+00:00,11603570,Hillandale Golf Course,9247244,men,stroke play,basic handicap,36,77952,9,4,7,8,3,left,0,FALSE,6,2
+2015-07-26T10:39:15+00:00,11603570,Hillandale Golf Course,9247244,men,stroke play,basic handicap,36,77954,10,4,1,7,3,right,0,FALSE,5,2
+2015-07-26T10:53:27+00:00,11603570,Hillandale Golf Course,9247244,men,stroke play,basic handicap,36,77956,11,4,6,10,3,straight,1,FALSE,8,2
+2015-07-26T11:09:15+00:00,11603570,Hillandale Golf Course,9247244,men,stroke play,basic handicap,36,77958,12,4,14,8,3,right,0,FALSE,6,2
+2015-07-26T11:21:48+00:00,11603570,Hillandale Golf Course,9247244,men,stroke play,basic handicap,36,77960,13,4,10,10,3,left,1,FALSE,8,2
+2015-07-26T11:37:38+00:00,11603570,Hillandale Golf Course,9247244,men,stroke play,basic handicap,36,77962,14,5,8,8,3,right,0,FALSE,6,2
+2015-07-26T11:45:35+00:00,11603570,Hillandale Golf Course,9247244,men,stroke play,basic handicap,36,77963,15,3,4,4,2,straight,0,FALSE,2,2
+2015-07-26T12:00:15+00:00,11603570,Hillandale Golf Course,9247244,men,stroke play,basic handicap,36,77964,16,4,12,5,2,right,0,FALSE,3,2
+2015-07-26T12:12:21+00:00,11603570,Hillandale Golf Course,9247244,men,stroke play,basic handicap,36,77966,17,3,11,3,2,straight,0,FALSE,1,2
+2015-07-26T12:25:36+00:00,11603570,Hillandale Golf Course,9247244,men,stroke play,basic handicap,36,77967,18,5,9,7,3,right,0,FALSE,5,2
+2015-07-19T21:19:22+00:00,11484539,Hillandale Golf Course,9114102,men,stroke play,basic handicap,36,77930,1,4,16,7,2,right,1,FALSE,5,2
+2015-07-19T21:20:09+00:00,11484539,Hillandale Golf Course,9114102,men,stroke play,basic handicap,36,77933,2,5,3,7,2,straight,0,FALSE,5,2
+2015-07-19T21:20:29+00:00,11484539,Hillandale Golf Course,9114102,men,stroke play,basic handicap,36,77936,3,4,2,7,3,straight,0,FALSE,5,2
+2015-07-19T21:20:58+00:00,11484539,Hillandale Golf Course,9114102,men,stroke play,basic handicap,36,77939,4,3,17,7,4,straight,1,FALSE,5,2
+2015-07-19T21:21:44+00:00,11484539,Hillandale Golf Course,9114102,men,stroke play,basic handicap,36,77942,5,4,18,8,3,left,1,FALSE,6,2
+2015-07-19T21:22:05+00:00,11484539,Hillandale Golf Course,9114102,men,stroke play,basic handicap,36,77945,6,4,15,5,2,straight,0,FALSE,3,2
+2015-07-19T21:22:41+00:00,11484539,Hillandale Golf Course,9114102,men,stroke play,basic handicap,36,77948,7,3,5,5,2,straight,0,TRUE,3,2
+2015-07-19T21:23:03+00:00,11484539,Hillandale Golf Course,9114102,men,stroke play,basic handicap,36,77951,8,4,13,6,2,straight,0,FALSE,4,2
+2015-07-19T21:23:21+00:00,11484539,Hillandale Golf Course,9114102,men,stroke play,basic handicap,36,77952,9,4,7,5,1,straight,0,FALSE,3,2
+2015-07-05T19:20:06+00:00,11245125,Occoneechee Golf Club,8844971,men,stroke play,basic handicap,0,423856,1,4,17,6,2,right,0,,6,0
+2015-07-05T19:20:06+00:00,11245125,Occoneechee Golf Club,8844971,men,stroke play,basic handicap,0,423857,2,4,3,8,3,left,1,TRUE,8,0
+2015-07-05T19:20:06+00:00,11245125,Occoneechee Golf Club,8844971,men,stroke play,basic handicap,0,423858,3,3,11,6,3,right,1,,6,0
+2015-07-05T19:20:06+00:00,11245125,Occoneechee Golf Club,8844971,men,stroke play,basic handicap,0,423859,4,4,5,6,2,right,0,,6,0
+2015-07-05T19:20:06+00:00,11245125,Occoneechee Golf Club,8844971,men,stroke play,basic handicap,0,423860,5,5,7,9,3,right,1,,9,0
+2015-07-05T19:20:06+00:00,11245125,Occoneechee Golf Club,8844971,men,stroke play,basic handicap,0,423861,6,4,1,13,3,right,4,,13,0
+2015-07-05T19:20:06+00:00,11245125,Occoneechee Golf Club,8844971,men,stroke play,basic handicap,0,423862,7,5,9,7,2,straight,1,,7,0
+2015-07-05T19:20:06+00:00,11245125,Occoneechee Golf Club,8844971,men,stroke play,basic handicap,0,423863,8,3,15,6,2,straight,1,,6,0
+2015-07-05T19:20:06+00:00,11245125,Occoneechee Golf Club,8844971,men,stroke play,basic handicap,0,423864,9,4,13,7,3,straight,0,,7,0
+2015-07-05T19:20:06+00:00,11245125,Occoneechee Golf Club,8844971,men,stroke play,basic handicap,0,423865,10,3,16,5,2,straight,0,,5,0
+2015-07-05T19:20:06+00:00,11245125,Occoneechee Golf Club,8844971,men,stroke play,basic handicap,0,423866,11,4,4,8,3,straight,1,,8,0
+2015-07-05T19:20:06+00:00,11245125,Occoneechee Golf Club,8844971,men,stroke play,basic handicap,0,423867,12,4,14,7,3,right,0,,7,0
+2015-07-05T19:20:06+00:00,11245125,Occoneechee Golf Club,8844971,men,stroke play,basic handicap,0,423868,13,4,12,8,3,straight,1,,8,0
+2015-07-05T19:20:06+00:00,11245125,Occoneechee Golf Club,8844971,men,stroke play,basic handicap,0,423869,14,4,10,7,2,top,0,,7,0
+2015-07-05T19:20:06+00:00,11245125,Occoneechee Golf Club,8844971,men,stroke play,basic handicap,0,423870,15,4,2,8,3,straight,0,,8,0
+2015-07-05T19:20:06+00:00,11245125,Occoneechee Golf Club,8844971,men,stroke play,basic handicap,0,423871,16,3,8,10,4,straight,3,,10,0
+2015-07-05T19:20:06+00:00,11245125,Occoneechee Golf Club,8844971,men,stroke play,basic handicap,0,423872,17,5,18,9,3,right,2,,9,0
+2015-07-05T19:20:06+00:00,11245125,Occoneechee Golf Club,8844971,men,stroke play,basic handicap,0,423873,18,4,6,7,3,straight,0,,7,0
+2015-06-07T09:27:26+00:00,10773460,Hillandale Golf Course,8317111,men,stroke play,basic handicap,36,77930,1,4,16,5,3,straight,0,FALSE,3,2
+2015-06-07T09:42:49+00:00,10773460,Hillandale Golf Course,8317111,men,stroke play,basic handicap,36,77933,2,5,3,7,3,straight,0,FALSE,5,2
+2015-06-07T09:59:21+00:00,10773460,Hillandale Golf Course,8317111,men,stroke play,basic handicap,36,77936,3,4,2,7,2,right,1,TRUE,5,2
+2015-06-07T10:11:15+00:00,10773460,Hillandale Golf Course,8317111,men,stroke play,basic handicap,36,77939,4,3,17,5,2,right,1,FALSE,3,2
+2015-06-07T10:23:13+00:00,10773460,Hillandale Golf Course,8317111,men,stroke play,basic handicap,36,77942,5,4,18,5,3,left,0,FALSE,3,2
+2015-06-07T10:39:29+00:00,10773460,Hillandale Golf Course,8317111,men,stroke play,basic handicap,36,77945,6,4,15,9,4,right,1,TRUE,7,2
+2015-06-07T10:49:58+00:00,10773460,Hillandale Golf Course,8317111,men,stroke play,basic handicap,36,77948,7,3,5,6,3,straight,0,TRUE,4,2
+2015-06-07T11:08:35+00:00,10773460,Hillandale Golf Course,8317111,men,stroke play,basic handicap,36,77951,8,4,13,10,3,right,3,FALSE,8,2
+2015-06-07T11:21:16+00:00,10773460,Hillandale Golf Course,8317111,men,stroke play,basic handicap,36,77952,9,4,7,10,2,right,4,FALSE,8,2
+2015-06-07T11:40:04+00:00,10773460,Hillandale Golf Course,8317111,men,stroke play,basic handicap,36,77954,10,4,1,8,3,right,0,FALSE,6,2
+2015-06-07T11:53:40+00:00,10773460,Hillandale Golf Course,8317111,men,stroke play,basic handicap,36,77956,11,4,6,4,1,straight,0,FALSE,2,2
+2015-06-07T12:09:55+00:00,10773460,Hillandale Golf Course,8317111,men,stroke play,basic handicap,36,77958,12,4,14,11,3,right,1,TRUE,9,2
+2015-06-07T12:22:54+00:00,10773460,Hillandale Golf Course,8317111,men,stroke play,basic handicap,36,77960,13,4,10,10,3,right,2,FALSE,8,2
+2015-06-07T12:40:40+00:00,10773460,Hillandale Golf Course,8317111,men,stroke play,basic handicap,36,77962,14,5,8,8,2,right,1,FALSE,6,2
+2015-06-07T12:48:53+00:00,10773460,Hillandale Golf Course,8317111,men,stroke play,basic handicap,36,77963,15,3,4,4,2,straight,0,FALSE,2,2
+2015-06-07T13:01:18+00:00,10773460,Hillandale Golf Course,8317111,men,stroke play,basic handicap,36,77964,16,4,12,8,2,right,0,TRUE,6,2
+2015-06-07T13:12:46+00:00,10773460,Hillandale Golf Course,8317111,men,stroke play,basic handicap,36,77966,17,3,11,6,4,left,0,FALSE,4,2
+2015-06-07T13:28:45+00:00,10773460,Hillandale Golf Course,8317111,men,stroke play,basic handicap,36,77967,18,5,9,8,3,left,0,FALSE,6,2
+2015-05-03T10:36:50+00:00,10258350,Hillandale Golf Course,7743428,men,stroke play,basic handicap,36,77930,1,4,16,6,3,straight,0,FALSE,4,2
+2015-05-03T10:58:04+00:00,10258350,Hillandale Golf Course,7743428,men,stroke play,basic handicap,36,77933,2,5,3,8,2,straight,0,FALSE,6,2
+2015-05-03T11:16:40+00:00,10258350,Hillandale Golf Course,7743428,men,stroke play,basic handicap,36,77936,3,4,2,9,4,straight,0,FALSE,7,2
+2015-05-03T11:28:47+00:00,10258350,Hillandale Golf Course,7743428,men,stroke play,basic handicap,36,77939,4,3,17,6,3,straight,0,FALSE,4,2
+2015-05-03T11:41:32+00:00,10258350,Hillandale Golf Course,7743428,men,stroke play,basic handicap,36,77942,5,4,18,8,2,straight,0,FALSE,6,2
+2015-05-03T12:01:49+00:00,10258350,Hillandale Golf Course,7743428,men,stroke play,basic handicap,36,77945,6,4,15,6,2,straight,1,FALSE,4,2
+2015-05-03T12:12:50+00:00,10258350,Hillandale Golf Course,7743428,men,stroke play,basic handicap,36,77948,7,3,5,4,2,straight,0,FALSE,2,2
+2015-05-03T12:28:20+00:00,10258350,Hillandale Golf Course,7743428,men,stroke play,basic handicap,36,77951,8,4,13,9,3,straight,0,FALSE,7,2
+2015-05-03T12:44:20+00:00,10258350,Hillandale Golf Course,7743428,men,stroke play,basic handicap,36,77952,9,4,7,9,3,straight,1,FALSE,7,2
+2015-05-03T13:02:37+00:00,10258350,Hillandale Golf Course,7743428,men,stroke play,basic handicap,36,77954,10,4,1,10,3,straight,0,FALSE,8,2
+2015-05-03T13:14:42+00:00,10258350,Hillandale Golf Course,7743428,men,stroke play,basic handicap,36,77956,11,4,6,10,3,straight,0,FALSE,8,2
+2015-05-03T13:30:19+00:00,10258350,Hillandale Golf Course,7743428,men,stroke play,basic handicap,36,77958,12,4,14,7,3,straight,0,FALSE,5,2
+2015-05-03T13:42:56+00:00,10258350,Hillandale Golf Course,7743428,men,stroke play,basic handicap,36,77960,13,4,10,7,3,straight,0,FALSE,5,2
+2015-05-03T14:14:14+00:00,10258350,Hillandale Golf Course,7743428,men,stroke play,basic handicap,36,77962,14,5,8,10,4,straight,0,FALSE,8,2
+2015-05-03T14:09:32+00:00,10258350,Hillandale Golf Course,7743428,men,stroke play,basic handicap,36,77963,15,3,4,6,3,straight,0,FALSE,4,2
+2015-05-03T14:24:24+00:00,10258350,Hillandale Golf Course,7743428,men,stroke play,basic handicap,36,77964,16,4,12,8,3,straight,0,FALSE,6,2
+2015-05-03T14:51:56+00:00,10258350,Hillandale Golf Course,7743428,men,stroke play,basic handicap,36,77966,17,3,11,4,2,straight,0,FALSE,2,2
+2015-05-03T14:52:17+00:00,10258350,Hillandale Golf Course,7743428,men,stroke play,basic handicap,36,77967,18,5,9,10,3,straight,0,FALSE,8,2
+2015-04-18T14:33:35+00:00,10069719,Occoneechee Golf Club,7533380,men,stroke play,basic handicap,36,423856,1,4,17,6,3,straight,0,FALSE,4,2
+2015-04-18T14:51:36+00:00,10069719,Occoneechee Golf Club,7533380,men,stroke play,basic handicap,36,423857,2,4,3,9,4,straight,1,FALSE,7,2
+2015-04-18T15:33:00+00:00,10069719,Occoneechee Golf Club,7533380,men,stroke play,basic handicap,36,423858,3,3,11,11,4,straight,2,FALSE,9,2
+2015-04-18T16:00:00+00:00,10069719,Occoneechee Golf Club,7533380,men,stroke play,basic handicap,36,423859,4,4,5,9,2,straight,1,FALSE,7,2
+2015-04-18T16:24:32+00:00,10069719,Occoneechee Golf Club,7533380,men,stroke play,basic handicap,36,423860,5,5,7,9,3,straight,0,FALSE,7,2
+2015-04-18T16:41:05+00:00,10069719,Occoneechee Golf Club,7533380,men,stroke play,basic handicap,36,423861,6,4,1,7,3,straight,0,FALSE,5,2
+2015-04-18T16:57:23+00:00,10069719,Occoneechee Golf Club,7533380,men,stroke play,basic handicap,36,423862,7,5,9,7,2,straight,0,FALSE,5,2
+2015-04-18T17:04:49+00:00,10069719,Occoneechee Golf Club,7533380,men,stroke play,basic handicap,36,423863,8,3,15,6,3,straight,0,FALSE,4,2
+2015-04-18T17:14:45+00:00,10069719,Occoneechee Golf Club,7533380,men,stroke play,basic handicap,36,423864,9,4,13,4,2,straight,0,FALSE,2,2
+2015-04-18T17:24:56+00:00,10069719,Occoneechee Golf Club,7533380,men,stroke play,basic handicap,36,423865,10,3,16,5,3,straight,0,FALSE,3,2
+2015-04-18T17:40:38+00:00,10069719,Occoneechee Golf Club,7533380,men,stroke play,basic handicap,36,423866,11,4,4,6,2,straight,0,FALSE,4,2
+2015-04-18T17:53:43+00:00,10069719,Occoneechee Golf Club,7533380,men,stroke play,basic handicap,36,423867,12,4,14,6,2,straight,0,FALSE,4,2
+2015-04-18T18:11:25+00:00,10069719,Occoneechee Golf Club,7533380,men,stroke play,basic handicap,36,423868,13,4,12,9,2,straight,1,FALSE,7,2
+2015-04-18T18:25:29+00:00,10069719,Occoneechee Golf Club,7533380,men,stroke play,basic handicap,36,423869,14,4,10,13,3,straight,1,FALSE,11,2
+2015-04-18T22:23:06+00:00,10069719,Occoneechee Golf Club,7533380,men,stroke play,basic handicap,36,423870,15,4,2,6,3,straight,0,FALSE,4,2
+2015-04-18T18:46:53+00:00,10069719,Occoneechee Golf Club,7533380,men,stroke play,basic handicap,36,423871,16,3,8,4,2,straight,0,FALSE,2,2
+2015-04-18T19:02:47+00:00,10069719,Occoneechee Golf Club,7533380,men,stroke play,basic handicap,36,423872,17,5,18,9,3,straight,0,FALSE,7,2
+2015-04-18T19:14:19+00:00,10069719,Occoneechee Golf Club,7533380,men,stroke play,basic handicap,36,423873,18,4,6,5,2,straight,0,FALSE,3,2
+2014-11-05T14:06:33+00:00,9191413,Hillandale Golf Course,6549134,men,stroke play,basic handicap,36,77930,1,4,16,8,3,straight,0,FALSE,6,2
+2014-11-05T14:26:37+00:00,9191413,Hillandale Golf Course,6549134,men,stroke play,basic handicap,36,77933,2,5,3,9,3,straight,1,FALSE,7,2
+2014-11-05T14:43:56+00:00,9191413,Hillandale Golf Course,6549134,men,stroke play,basic handicap,36,77936,3,4,2,10,5,straight,0,FALSE,8,2
+2014-11-05T14:59:24+00:00,9191413,Hillandale Golf Course,6549134,men,stroke play,basic handicap,36,77939,4,3,17,6,3,straight,0,FALSE,4,2
+2014-11-05T15:14:07+00:00,9191413,Hillandale Golf Course,6549134,men,stroke play,basic handicap,36,77942,5,4,18,7,2,straight,1,FALSE,5,2
+2014-11-05T15:25:03+00:00,9191413,Hillandale Golf Course,6549134,men,stroke play,basic handicap,36,77945,6,4,15,6,0,left,0,FALSE,4,2
+2014-11-05T15:37:12+00:00,9191413,Hillandale Golf Course,6549134,men,stroke play,basic handicap,36,77948,7,3,5,6,3,straight,0,FALSE,4,2
+2014-11-05T15:51:55+00:00,9191413,Hillandale Golf Course,6549134,men,stroke play,basic handicap,36,77951,8,4,13,5,2,straight,0,FALSE,3,2
+2014-11-05T16:09:28+00:00,9191413,Hillandale Golf Course,6549134,men,stroke play,basic handicap,36,77952,9,4,7,6,2,straight,0,FALSE,4,2
+2014-09-13T14:29:14+00:00,8729163,Twin Lakes Golf Course,6049962,men,stroke play,no handicap,0,129558,1,4,,8,4,,,,8,0
+2014-09-13T14:29:28+00:00,8729163,Twin Lakes Golf Course,6049962,men,stroke play,no handicap,0,129559,2,4,,8,4,,,,8,0
+2014-09-13T14:29:45+00:00,8729163,Twin Lakes Golf Course,6049962,men,stroke play,no handicap,0,129560,3,3,,5,3,,,,5,0
+2014-09-13T14:30:02+00:00,8729163,Twin Lakes Golf Course,6049962,men,stroke play,no handicap,0,129561,4,5,,7,3,,,,7,0
+2014-09-13T14:30:27+00:00,8729163,Twin Lakes Golf Course,6049962,men,stroke play,no handicap,0,129562,5,4,,8,4,,,,8,0
+2014-09-13T14:31:01+00:00,8729163,Twin Lakes Golf Course,6049962,men,stroke play,no handicap,0,129563,6,3,,4,2,,,,4,0
+2014-09-13T14:31:23+00:00,8729163,Twin Lakes Golf Course,6049962,men,stroke play,no handicap,0,129565,7,4,,5,3,,,,5,0
+2014-09-13T14:31:43+00:00,8729163,Twin Lakes Golf Course,6049962,men,stroke play,no handicap,0,129567,8,4,,8,3,,,,8,0
+2014-09-13T14:31:56+00:00,8729163,Twin Lakes Golf Course,6049962,men,stroke play,no handicap,0,129569,9,4,,8,3,,,,8,0
+2014-09-13T14:04:08+00:00,8728644,Twin Lakes Golf Course,6049404,men,stroke play,no handicap,0,129558,1,4,,9,4,,,,9,0
+2014-09-13T14:04:23+00:00,8728644,Twin Lakes Golf Course,6049404,men,stroke play,no handicap,0,129559,2,4,,9,4,,,,9,0
+2014-09-13T14:04:38+00:00,8728644,Twin Lakes Golf Course,6049404,men,stroke play,no handicap,0,129560,3,3,,11,5,,,,11,0
+2014-09-13T14:05:03+00:00,8728644,Twin Lakes Golf Course,6049404,men,stroke play,no handicap,0,129561,4,5,,15,6,,,,15,0
+2014-09-13T14:05:18+00:00,8728644,Twin Lakes Golf Course,6049404,men,stroke play,no handicap,0,129562,5,4,,7,3,,,,7,0
+2014-09-13T14:05:40+00:00,8728644,Twin Lakes Golf Course,6049404,men,stroke play,no handicap,0,129563,6,3,,7,3,,,,7,0
+2014-09-13T14:05:57+00:00,8728644,Twin Lakes Golf Course,6049404,men,stroke play,no handicap,0,129565,7,4,,7,3,,,,7,0
+2014-09-13T14:06:11+00:00,8728644,Twin Lakes Golf Course,6049404,men,stroke play,no handicap,0,129567,8,4,,11,5,,,,11,0
+2014-09-13T14:06:21+00:00,8728644,Twin Lakes Golf Course,6049404,men,stroke play,no handicap,0,129569,9,4,,7,3,,,,7,0
