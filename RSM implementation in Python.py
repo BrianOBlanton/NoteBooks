@@ -39,7 +39,7 @@ print xtest.shape,xtest[0]
 print type(index), index
 
 
-# In[147]:
+# In[151]:
 
 def central_ckv (P,R,c,k,weights,Nd,index,xtest):
     
@@ -61,12 +61,12 @@ def central_ckv (P,R,c,k,weights,Nd,index,xtest):
     std_R=np.std(R,axis=0);
 
     for i in range(0,1): # NSupportPoints):
-        aux=[]
+        aux=np.empty
         for j in range(0,ni):
             ii=index[j]
             print i,j,ii,ni,index[j:ni]
             temp=[Normalized_P[ii,i]*Normalized_P[index[j:ni],i]];
-            
+            print aux.shape,temp.shape
             aux=np.column_stack((aux, temp))
 
 
@@ -83,7 +83,7 @@ def central_ckv (P,R,c,k,weights,Nd,index,xtest):
     #print NSupportPoints
 
 
-# In[148]:
+# In[152]:
 
 central_ckv(P,R,c,k,weights,Nd,index,xtest)
 
