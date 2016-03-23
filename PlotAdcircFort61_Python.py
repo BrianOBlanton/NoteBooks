@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[1]:
+# In[21]:
 
 import netCDF4
 import matplotlib.pyplot as plt
@@ -9,20 +9,18 @@ import numpy as np
 import time as TIME
 import datetime
 import math as math
-get_ipython().magic(u'matplotlib inline')
+get_ipython().magic(u'matplotlib notebook')
 
 
-# In[13]:
+# In[22]:
 
-url='/projects/nsf-storm/ADCIRC/Tides/Isabel/fort.61.nc'
-#url='http://localhost:8080/thredds/dodsC/testAll/fort.61.nc'
-#url='http://opendap.renci.org:1935/thredds/dodsC/Test/fort.61.nc'
+url='http://localhost:8080/thredds/dodsC/testAll/fort.61.nc'
 var_name='zeta'
 nc=netCDF4.Dataset(url)
 print nc.variables.keys()
 
 
-# In[14]:
+# In[23]:
 
 time=nc.variables['time']
 var=nc.variables[var_name]
@@ -40,7 +38,7 @@ for i in range(sn.shape[0]) :
 for p in lstr: print p
 
 
-# In[15]:
+# In[24]:
 
 fig = plt.figure(figsize=(12,6), dpi=144)
 pc=plt.plot(dtime,var)
@@ -51,18 +49,23 @@ plt.ylabel("%s\n[%s]" % (var.long_name, var.units), fontsize=20)
 plt.legend(lstr, fontsize=8)
 
 
-# In[5]:
+# In[52]:
 
 #plt.hist2d
-x=h[1][0:10]
-y=var[:,1]
-h=plt.hist(y);
-pdf=h[0]/len(y)
+y=np.transpose(var[:,0])
+fig = plt.figure(figsize=(4,4), dpi=72)
+h=plt.hist(y,bins=25);
+x=h[1]
+y2=h[0]
+pdf=y2/len(y)
+
 cdf=(np.cumsum(pdf))
-print cdf
+fig = plt.figure(figsize=(4,4), dpi=72)
+plt.plot(x[0:-1],cdf)
+#print cdf
 
 
-# In[131]:
+# In[ ]:
 
 plt.plot(x,cdf)
 

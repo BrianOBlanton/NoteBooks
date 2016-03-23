@@ -6,7 +6,7 @@
 # 
 # ## exercise:  make a plot (template below) of the MOM for this Experiment.  I.e., the max across all maxes for the ensembles 1-21.
 
-# In[2]:
+# In[1]:
 
 from pylab import *
 
@@ -18,7 +18,7 @@ import sys
 get_ipython().magic(u'matplotlib inline')
 
 
-# In[3]:
+# In[2]:
 
 #  this is the THREDDS url to the Isabel Experiment #1, ensemble 01.  
 def getURL (ensemble):
@@ -27,7 +27,7 @@ def getURL (ensemble):
     return url
 
 
-# In[13]:
+# In[3]:
 
 # get ADCIRC grid parts;  this need ony be done once, as it can be tome-comsuming over the network
 url=getURL(1)
@@ -43,7 +43,7 @@ print tri.x.shape
 print lon.shape
 
 
-# In[18]:
+# In[4]:
 
 # This gets the data associated with the variable;  
 # this part should be looped over to load the sequence of ensembles; 
@@ -66,7 +66,7 @@ for ens in range(0,size-1):
     mom=np.nanmax(c,axis=1)
 
 
-# In[19]:
+# In[5]:
 
 #mom=np.transpose(mom)
 #mom=np.squeeze(mom)
@@ -80,7 +80,7 @@ vmax=np.ceil(np.nanmax(mom))
 print mom[875],mom[876], vmax
 
 
-# In[20]:
+# In[6]:
 
 print 'Making contours in figure ...'
 fig = plt.figure(figsize=(18,9), dpi=144)

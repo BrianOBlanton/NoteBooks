@@ -4,23 +4,24 @@
 # import matlab .mat file into python
 # 
 
-# In[1]:
+# In[2]:
 
 from pylab import *
 import matplotlib.tri as Tri
 import matplotlib.pyplot as plt
-get_ipython().magic(u'matplotlib inline')
+#get_ipython().magic(u'matplotlib notebook')
 
 #import tables
 import h5py
 import numpy as np
 import numpy.matlib as ml
 import numpy.linalg as la
+import numpy.ma as ma
 
 from central_ckv import central_ckv
 
 
-# In[2]:
+# In[3]:
 
 # get the model in a matlab file, stored as -v7.3
 # the model components must be saved as individual variables, 
@@ -31,7 +32,10 @@ f = h5py.File(mf, "r")
 print f
 
 
-# In[3]:
+global c, k, Nd
+global P, R, weights, index
+
+# In[4]:
 
 #print f.keys()
 #for name in f:
@@ -54,10 +58,7 @@ TS=xtest[2]
 Vmax=xtest[3]
 LatNorth=xtest[4]
 LatSouth=xtest[5]
-
-rmw,H_b,TS,Vmax,LatNorth,LatSouth
-
-
+#rmw,H_b,TS,Vmax,LatNorth,LatSouth
 
 p1min=np.min(P[:,0]); p1max=np.max(P[:,0])  # rmw
 p2min=np.min(P[:,1]); p2max=np.max(P[:,1])  # H_b
@@ -79,9 +80,6 @@ dp6=(p6max-p6min)/20
 #print type(index), index
 
 
-global c, k, Nd
-global P, R, weights, index
-
 # get the FEM grid parts from f to create a triangulation object
 lon = np.squeeze(f['x'][:])
 lat = np.squeeze(f['y'][:])
@@ -95,7 +93,7 @@ NodeIndices=np.squeeze(f['NodeIndices'][:])
 NodeIndices=(NodeIndices-1).astype(int)
 
 
-# In[4]:
+# In[7]:
 
 def master(rmw,H_b,TS,Vmax,LatNorth,LatSouth):
     
@@ -106,55 +104,48 @@ def master(rmw,H_b,TS,Vmax,LatNorth,LatSouth):
     temp=central_ckv(P,R,c,k,weights,Nd,index,xtest)
     
     # put response into variable sized as lon.shape
-    print tri.x.shape
+    #print tri.x.shape
     zhat=np.zeros(tri.x.shape)
+#    zhat[:]=np.nan
+    print type(zhat),zhat.shape
+
+   
     #zhat.fill(np.nan)
     #print zhat[0:10]
     zhat[NodeIndices]=temp
+    #zhat=ma.masked_less(zhat,0)
+    print np.nanmin(zhat),np.nanmax(zhat)
+    vmin=np.floor(np.nanmin(zhat))
+    vmax=np.ceil(np.nanmax(zhat))
+    levels = linspace(vmin,vmax,11)
+    print levels
     
     #print 'Making contours in figure ...'
-    fig = plt.figure(figsize=(10,5), dpi=144)
-    ax = fig.add_axes([0.1, 0.1, 0.8, 0.8]) 
+    fig = plt.figure(figsize=(4,3), dpi=144)
+    ax = fig.add_axes([0.0, 0.1, 0.8, 0.8]) 
     ax.set_aspect(1.0/np.cos(latmin * np.pi / 180.0))
 
     #print 'Calling tricontourf  ...'
-    vmax=np.max(np.abs(temp))
-    levels = linspace(0.,np.ceil(vmax),11)
-    #print levels
-    
+
     contour = tricontourf(tri, zhat, levels=levels,shading='faceted')
     plt.grid(True)
     plt.xlim((-80,-74))
     plt.ylim((33,37))
-    plt.tick_params(axis='both', which='major', labelsize=12)
-    plt.title('RSM test in Python', fontsize=16)
+    plt.tick_params(axis='both', which='major', labelsize=8)
+    plt.title('RSM test in Python', fontsize=12)
 
     # add colorbar
-    cbax = fig.add_axes([0.80, 0.1, 0.05, 0.8]) 
+    cbax = fig.add_axes([0.85, 0.1, 0.05, 0.8]) 
     cb = plt.colorbar(contour, cax=cbax,  orientation='vertical')
-    cb.set_label('[m MSL]', fontsize=24)
-    cb.ax.tick_params(axis='both', which='major', labelsize=12)
-    
+    cb.set_label('[m MSL]', fontsize=8)
+    cb.ax.tick_params(axis='both', which='major', labelsize=8)
+    plt.show()
+ 
 
 
-# In[5]:
+# In[8]:
 
-#from __future__ import print_function # for python 2
-from ipywidgets import interact, interactive, fixed
-import ipywidgets as widgets
-
-
-# In[6]:
-
-interact(master,          p1=widgets.FloatSlider(min=p1min,max=p1max,step=dp1,value=p1),         p2=widgets.FloatSlider(min=p2min,max=p2max,step=dp2,value=p2),         p3=widgets.FloatSlider(min=p3min,max=p3max,step=dp3,value=p3),         p4=widgets.FloatSlider(min=p4min,max=p4max,step=dp4,value=p4),         p5=widgets.FloatSlider(min=p5min,max=p5max,step=dp5,value=p5),         p6=widgets.FloatSlider(min=p6min,max=p6max,step=dp6,value=p6))
-
-
-# In[ ]:
-
-
-
-
-# In[ ]:
+master(66.8,1,7.5,38,5,5)
 
 
 
