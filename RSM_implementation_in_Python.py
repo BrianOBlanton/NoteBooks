@@ -48,12 +48,16 @@ index=np.squeeze(f['index'][:])
 xtest=np.array([ 66.8, 1.06, 7.5, 38, 5.23, 5.25])
 xtest=np.squeeze(np.transpose(xtest))
 
-p1=xtest[0]
-p2=xtest[1]
-p3=xtest[2]
-p4=xtest[3]
-p5=xtest[4]
-p6=xtest[5]
+rmw=xtest[0]
+H_b=xtest[1]
+TS=xtest[2]
+Vmax=xtest[3]
+LatNorth=xtest[4]
+LatSouth=xtest[5]
+
+rmw,H_b,TS,Vmax,LatNorth,LatSouth
+
+
 
 p1min=np.min(P[:,0]); p1max=np.max(P[:,0])  # rmw
 p2min=np.min(P[:,1]); p2max=np.max(P[:,1])  # H_b
@@ -93,12 +97,12 @@ NodeIndices=(NodeIndices-1).astype(int)
 
 # In[4]:
 
-def master(p1,p2,p3,p4,p5,p6):
+def master(rmw,H_b,TS,Vmax,LatNorth,LatSouth):
     
     global c, k, Nd
     global P, R, weights, index
     
-    xtest=np.array([p1,p2,p3,p4,p5,p6])
+    xtest=np.array([rmw,H_b,TS,Vmax,LatNorth,LatSouth])
     temp=central_ckv(P,R,c,k,weights,Nd,index,xtest)
     
     # put response into variable sized as lon.shape
