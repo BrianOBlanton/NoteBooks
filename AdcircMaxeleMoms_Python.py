@@ -43,7 +43,7 @@ print tri.x.shape
 print lon.shape
 
 
-# In[4]:
+# In[26]:
 
 # This gets the data associated with the variable;  
 # this part should be looped over to load the sequence of ensembles; 
@@ -53,20 +53,31 @@ var = nc.variables[vname]
 var_d=var[:]
 mom=np.zeros(var_d.shape)
 mom[:]=np.nan
+print type(mom),mom.shape, mom[0]
+print range(0,1)
+
+
+# In[29]:
 
 size = 22  #  number of ens members
 
-for ens in range(0,size-1):
+for ens in range(0,1): # size-1):
     url = getURL(ens+1)
     nc=netCDF4.Dataset(url)  # get new nc object for each ens
     var = nc.variables[vname]
     var_d=var[:]
+    print type(var_d),np.nanmin(var_d),np.nanmax(var_d)
     print 'Ensemble ' + str(ens) + ' : ' + url
     c=np.column_stack((mom,np.squeeze(var_d)))
+    print type(c)
     mom=np.nanmax(c,axis=1)
+    print 'Maximum in Mom array : ' + str(np.nanmax(mom))
+    print 'Minimum in Mom array : ' + str(np.nanmin(mom))
+
+print type(mom)
 
 
-# In[5]:
+# In[28]:
 
 #mom=np.transpose(mom)
 #mom=np.squeeze(mom)
@@ -80,7 +91,7 @@ vmax=np.ceil(np.nanmax(mom))
 print mom[875],mom[876], vmax
 
 
-# In[6]:
+# In[19]:
 
 print 'Making contours in figure ...'
 fig = plt.figure(figsize=(18,9), dpi=144)
@@ -93,6 +104,8 @@ print np.nanmax(mom)
 print mom.shape
 
 print 'Calling tricontourf  ...'
+print tri
+print mom
 contour = tricontourf(tri, mom,levels=levels,shading='faceted')
 plt.grid(True)
 plt.xlim((-80,-74))
