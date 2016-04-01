@@ -1,4 +1,22 @@
 Date Inserted,Round Id,Course,Scorecard Id,Tee Type,Scorecard Type,Handicap Type,Handicap,Hole Id,Hole Number,Par,Stroke Index,Score,Putts,Drive Result,Penalty Strokes,Bunker Hit,Net Score,Strokes Taken
+2016-03-26T10:07:10+00:00,13840237,Hillandale Golf Course,11797005,men,stroke play,basic handicap,36,77930,1,4,16,7,3,straight,0,FALSE,5,2
+2016-03-26T10:22:15+00:00,13840237,Hillandale Golf Course,11797005,men,stroke play,basic handicap,36,77933,2,5,3,10,3,right,2,FALSE,8,2
+2016-03-26T10:37:47+00:00,13840237,Hillandale Golf Course,11797005,men,stroke play,basic handicap,36,77936,3,4,2,7,1,right,1,FALSE,5,2
+2016-03-26T10:49:39+00:00,13840237,Hillandale Golf Course,11797005,men,stroke play,basic handicap,36,77939,4,3,17,5,2,right,1,FALSE,3,2
+2016-03-26T11:03:53+00:00,13840237,Hillandale Golf Course,11797005,men,stroke play,basic handicap,36,77942,5,4,18,7,3,straight,0,TRUE,5,2
+2016-03-26T11:18:54+00:00,13840237,Hillandale Golf Course,11797005,men,stroke play,basic handicap,36,77945,6,4,15,6,2,right,1,FALSE,4,2
+2016-03-26T11:27:26+00:00,13840237,Hillandale Golf Course,11797005,men,stroke play,basic handicap,36,77948,7,3,5,4,2,right,0,FALSE,2,2
+2016-03-26T11:38:44+00:00,13840237,Hillandale Golf Course,11797005,men,stroke play,basic handicap,36,77951,8,4,13,4,2,straight,0,FALSE,2,2
+2016-03-26T11:54:56+00:00,13840237,Hillandale Golf Course,11797005,men,stroke play,basic handicap,36,77952,9,4,7,6,2,right,1,FALSE,4,2
+2016-03-26T12:16:15+00:00,13840237,Hillandale Golf Course,11797005,men,stroke play,basic handicap,36,77954,10,4,1,7,2,straight,0,FALSE,5,2
+2016-03-26T12:30:50+00:00,13840237,Hillandale Golf Course,11797005,men,stroke play,basic handicap,36,77956,11,4,6,6,2,straight,0,FALSE,4,2
+2016-03-26T12:48:30+00:00,13840237,Hillandale Golf Course,11797005,men,stroke play,basic handicap,36,77958,12,4,14,7,3,straight,0,FALSE,5,2
+2016-03-26T13:03:29+00:00,13840237,Hillandale Golf Course,11797005,men,stroke play,basic handicap,36,77960,13,4,10,7,3,right,1,FALSE,5,2
+2016-03-26T13:18:56+00:00,13840237,Hillandale Golf Course,11797005,men,stroke play,basic handicap,36,77962,14,5,8,7,3,straight,0,FALSE,5,2
+2016-03-26T13:27:40+00:00,13840237,Hillandale Golf Course,11797005,men,stroke play,basic handicap,36,77963,15,3,4,4,2,straight,0,TRUE,2,2
+2016-03-26T13:42:00+00:00,13840237,Hillandale Golf Course,11797005,men,stroke play,basic handicap,36,77964,16,4,12,4,2,straight,0,FALSE,2,2
+2016-03-26T13:56:44+00:00,13840237,Hillandale Golf Course,11797005,men,stroke play,basic handicap,36,77966,17,3,11,5,2,right,0,FALSE,3,2
+2016-03-26T14:11:48+00:00,13840237,Hillandale Golf Course,11797005,men,stroke play,basic handicap,36,77967,18,5,9,7,3,straight,0,FALSE,5,2
 2016-03-19T10:26:55+00:00,13779734,Occoneechee Golf Club,11726829,men,stroke play,basic handicap,36,423856,1,4,17,5,2,straight,0,FALSE,3,2
 2016-03-19T10:42:36+00:00,13779734,Occoneechee Golf Club,11726829,men,stroke play,basic handicap,36,423857,2,4,3,7,2,straight,0,FALSE,5,2
 2016-03-19T10:51:54+00:00,13779734,Occoneechee Golf Club,11726829,men,stroke play,basic handicap,36,423858,3,3,11,4,2,straight,0,FALSE,2,2
@@ -9,7 +27,7 @@ Date Inserted,Round Id,Course,Scorecard Id,Tee Type,Scorecard Type,Handicap Type
 2016-03-19T12:07:13+00:00,13779734,Occoneechee Golf Club,11726829,men,stroke play,basic handicap,36,423863,8,3,15,4,2,straight,0,FALSE,2,2
 2016-03-19T12:20:11+00:00,13779734,Occoneechee Golf Club,11726829,men,stroke play,basic handicap,36,423864,9,4,13,7,3,right,0,FALSE,5,2
 2016-03-19T12:52:02+00:00,13779734,Occoneechee Golf Club,11726829,men,stroke play,basic handicap,36,423865,10,3,16,5,2,right,0,FALSE,3,2
-2016-03-19T12:52:02+00:00,13779734,Occoneechee Golf Club,11726829,men,stroke play,basic handicap,36,423865,11,4,4,7,3,straight,0,FALSE,5,2
+2016-03-19T21:52:09+00:00,13779734,Occoneechee Golf Club,11726829,men,stroke play,basic handicap,36,423866,11,4,4,7,3,straight,0,FALSE,5,2
 2016-03-19T13:04:27+00:00,13779734,Occoneechee Golf Club,11726829,men,stroke play,basic handicap,36,423867,12,4,14,6,2,left,0,FALSE,4,2
 2016-03-19T13:19:38+00:00,13779734,Occoneechee Golf Club,11726829,men,stroke play,basic handicap,36,423868,13,4,12,7,2,right,1,FALSE,5,2
 2016-03-19T13:33:11+00:00,13779734,Occoneechee Golf Club,11726829,men,stroke play,basic handicap,36,423869,14,4,10,7,3,straight,0,FALSE,5,2

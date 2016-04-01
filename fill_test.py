@@ -105,8 +105,18 @@ def master(rmw,H_b,TS,Vmax,LatNorth,LatSouth):
     
     # put response into variable sized as lon.shape
     #print tri.x.shape
+<<<<<<< Updated upstream
     zhat=ma.array(np.zeros(tri.x.shape))
  
+=======
+    zhat=np.zeros(tri.x.shape)
+    zhat[:]=np.nan
+    print type(zhat),zhat.shape
+
+   
+    #zhat.fill(np.nan)
+    #print zhat[0:10]
+>>>>>>> Stashed changes
     zhat[NodeIndices]=temp
     zhat = ma.array(zhat,mask=np.isnan(zhat))
     print 'here' 
