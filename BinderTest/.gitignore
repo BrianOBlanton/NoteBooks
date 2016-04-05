@@ -1,0 +1,11 @@
+.DS_Store
+*~
+.ipynb*
+Untitled*
+*copy*
+*Copy*
+Model.mat
+*.swp
+*.pyc
+*.html
+

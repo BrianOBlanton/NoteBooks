@@ -23,9 +23,14 @@ print "Number of 9-hole rounds = " + str(NumberOfRounds)
 # Hillandale slope = 112, rating = 64.5/2
 # Occoneechee slope = 124, rating 68.6/2
 # Twin Lakes slope = 113, rating = 34.2
+<<<<<<< Updated upstream
 # Lakeshore slope = 117, rating = 67.3/2
 ratings = {'Hillandale Golf Course': 64.5/2, 'Occoneechee Golf Club': 68.6/2, 'Twin Lakes Golf Course': 34.2, 'Lakeshore Golf Course': 67.3/2}
 slopes  = {'Hillandale Golf Course': 112,    'Occoneechee Golf Club': 124, 'Twin Lakes Golf Course': 113, 'Lakeshore Golf Course': 117}
+=======
+ratings = {'Hillandale Golf Course': 64.5/2, 'Occoneechee Golf Club': 68.6/2, 'Twin Lakes Golf Course': 34.2}
+slopes  = {'Hillandale Golf Course': 112,    'Occoneechee Golf Club': 124, 'Twin Lakes Golf Course': 113}
+>>>>>>> Stashed changes
 
 Courses=np.flipud(np.reshape(f.Course,(NumberOfRounds,9)))
 Courses=Courses[:,0]
