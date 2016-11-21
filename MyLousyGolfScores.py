@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[191]:
+# In[1]:
 
 import numpy as np
 import tables as PyT
@@ -10,12 +10,12 @@ import matplotlib.pyplot as plt
 get_ipython().magic(u'matplotlib inline')
 
 
-# In[192]:
+# In[2]:
 
 f=pd.read_csv('golf_data.csv',parse_dates={'dt':[18]})
 
 
-# In[199]:
+# In[3]:
 
 NumberOfRounds=f.shape[0]/9
 print "Number of 9-hole rounds = " + str(NumberOfRounds)
@@ -23,14 +23,9 @@ print "Number of 9-hole rounds = " + str(NumberOfRounds)
 # Hillandale slope = 112, rating = 64.5/2
 # Occoneechee slope = 124, rating 68.6/2
 # Twin Lakes slope = 113, rating = 34.2
-<<<<<<< Updated upstream
 # Lakeshore slope = 117, rating = 67.3/2
 ratings = {'Hillandale Golf Course': 64.5/2, 'Occoneechee Golf Club': 68.6/2, 'Twin Lakes Golf Course': 34.2, 'Lakeshore Golf Course': 67.3/2}
 slopes  = {'Hillandale Golf Course': 112,    'Occoneechee Golf Club': 124, 'Twin Lakes Golf Course': 113, 'Lakeshore Golf Course': 117}
-=======
-ratings = {'Hillandale Golf Course': 64.5/2, 'Occoneechee Golf Club': 68.6/2, 'Twin Lakes Golf Course': 34.2}
-slopes  = {'Hillandale Golf Course': 112,    'Occoneechee Golf Club': 124, 'Twin Lakes Golf Course': 113}
->>>>>>> Stashed changes
 
 Courses=np.flipud(np.reshape(f.Course,(NumberOfRounds,9)))
 Courses=Courses[:,0]
@@ -41,7 +36,7 @@ for i in range(0,Courses.shape[0]):
     CourseRatings[i]=ratings[Courses[i]]
 
 
-# In[200]:
+# In[4]:
 
 PerHoleScores=np.flipud(np.reshape(f.Score,(NumberOfRounds,9)))
 RoundScores=np.sum(PerHoleScores,axis=1)
@@ -49,7 +44,7 @@ t=np.flipud(np.reshape(f.dt,(NumberOfRounds,9)))
 dates=t[:,0]
 
 
-# In[201]:
+# In[5]:
 
 regression = np.polyfit(range(0,NumberOfRounds), RoundScores, 1)
 r_x, r_y = zip(*((i, i*regression[0] + regression[1]) for i in range(NumberOfRounds)))
@@ -57,7 +52,7 @@ regression2 = np.polyfit(range(1,NumberOfRounds), RoundScores[1:], 1)
 r2_x, r2_y = zip(*((i, i*regression2[0] + regression2[1]) for i in range(NumberOfRounds)))
 
 
-# In[202]:
+# In[6]:
 
 plt.figure(figsize=(10,6))
 plt.plot(RoundScores,'ro-')
@@ -73,12 +68,17 @@ lstr.append('Excluding first (83)')
 plt.legend(lstr, fontsize=12);
 
 
-# In[203]:
+# In[14]:
+
+print RoundScores
+
+
+# In[7]:
 
 #plt.hist(RoundScores)
 
 
-# In[204]:
+# In[8]:
 
 # adjusted gross score
 # max of 9 on any hole
@@ -89,7 +89,7 @@ regression_adj = np.polyfit(range(0,NumberOfRounds), RoundScores_adj, 1)
 r_x_adj, r_y_adj = zip(*((i, i*regression_adj[0] + regression_adj[1]) for i in range(NumberOfRounds)))
 
 
-# In[213]:
+# In[9]:
 
 plt.figure(figsize=(10,6))
 plt.plot(RoundScores,'ro-')
@@ -108,7 +108,7 @@ lstr.append('Adjusted Scores')
 plt.legend(lstr, fontsize=12);
 
 
-# In[215]:
+# In[10]:
 
 ## Handicap differential = (Adjusted Gross Score - Course Rating) x 113 ÷ Slope Rating
 ## https://www.golfnow.com/courses/1033123-hillandale-golf-course-details
@@ -120,18 +120,18 @@ HandicapDifferential=HandicapDifferential[-10:-1]
 #hd=np.trunc(hd*10)/10
 
 
-# In[216]:
+# In[11]:
 
 MeanHandicapDifferential=np.mean(HandicapDifferential)
 
 
-# In[217]:
+# In[12]:
 
 HandiCapIndex=np.trunc(.96*MeanHandicapDifferential*10)/10
 print "Handicap Index = " + str(HandiCapIndex)
 
 
-# In[218]:
+# In[13]:
 
 # hillandale hc
 print 'Hillandale HC = ' + str(int(np.round(HandiCapIndex*slopes['Hillandale Golf Course']/113)))

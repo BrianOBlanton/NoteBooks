@@ -10,6 +10,10 @@
 
 from pylab import *
 
+
+# In[2]:
+
+
 import matplotlib.tri as Tri
 import netCDF4
 import datetime
@@ -18,15 +22,25 @@ import sys
 get_ipython().magic(u'matplotlib inline')
 
 
+<<<<<<< Updated upstream
 # In[2]:
+=======
+# In[7]:
+>>>>>>> Stashed changes
 
 #  this is the THREDDS url to the Isabel Experiment #1, ensemble 01.  
-ens=10
-url_base='http://opendap.renci.org:1935/thredds/dodsC/Experiments/Isabel_ex1/ADCIRC/12km/n%02d/maxele.63.nc'
-url=url_base % ens
+#ens=10
+#url_base='http://opendap.renci.org:1935/thredds/dodsC/Experiments/Isabel_ex1/ADCIRC/12km/n%02d/maxele.63.nc'
+#url=url_base % ens
 
+url='http://opendap.renci.org:1935/thredds/dodsC/RegionThree-ValidationSolutions/Isabel/TidesSurgeWaves/orig/maxele.63.nc'
 
+<<<<<<< Updated upstream
 # In[3]:
+=======
+
+# In[8]:
+>>>>>>> Stashed changes
 
 # get ADCIRC grid parts;  this need ony be done once, as it can be tome-comsuming over the network
 nc=netCDF4.Dataset(url)
@@ -39,7 +53,11 @@ latmin = np.mean(lat)  # needed for scaling lon/lat plots
 print type(lon)
 
 
+<<<<<<< Updated upstream
 # In[4]:
+=======
+# In[5]:
+>>>>>>> Stashed changes
 
 # This gets the data associated with the variable;  this part should be looped over to load the sequence of ensembles; 
 # this means looping over ens=1:21 and building the url each time.
@@ -51,7 +69,7 @@ print var_d
 print type(var_d)
 
 
-# In[54]:
+# In[6]:
 
 print 'Making contours in figure ...'
 fig = plt.figure(figsize=(18,9), dpi=144)
@@ -67,7 +85,7 @@ plt.grid(True)
 plt.xlim((-80,-74))
 plt.ylim((33,37))
 plt.tick_params(axis='both', which='major', labelsize=20)
-plt.title('Ensemble Member = %02d' % ens, fontsize=16)
+get_ipython().magic(u"plt.title ('Ensemble Member = %02d' % ens, fontsize=16)")
 
 # add colorbar
 cbax = fig.add_axes([0.80, 0.1, 0.05, 0.8]) 
