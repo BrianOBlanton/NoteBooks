@@ -6,7 +6,7 @@
 # 
 # ## exercise:  make a plot (template below) of the MOM for this Experiment.  I.e., the max across all maxes for the ensembles 1-21.
 
-# In[4]:
+# In[1]:
 
 from pylab import *
 
@@ -18,7 +18,7 @@ import sys
 get_ipython().magic(u'matplotlib inline')
 
 
-# In[5]:
+# In[2]:
 
 #  this is the THREDDS url to the Isabel Experiment #1, ensemble 01.  
 ens=10
@@ -26,7 +26,7 @@ url_base='http://opendap.renci.org:1935/thredds/dodsC/Experiments/Isabel_ex1/ADC
 url=url_base % ens
 
 
-# In[10]:
+# In[3]:
 
 # get ADCIRC grid parts;  this need ony be done once, as it can be tome-comsuming over the network
 nc=netCDF4.Dataset(url)
@@ -39,7 +39,7 @@ latmin = np.mean(lat)  # needed for scaling lon/lat plots
 print type(lon)
 
 
-# In[8]:
+# In[4]:
 
 # This gets the data associated with the variable;  this part should be looped over to load the sequence of ensembles; 
 # this means looping over ens=1:21 and building the url each time.

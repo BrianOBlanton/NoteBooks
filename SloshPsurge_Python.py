@@ -3,15 +3,16 @@
 
 # ### Demonstration of how to get PSURGE Grib2 data into subsetted netCDF and make plots 
 
-# ### First, get a grib2 file from: http://www.nws.noaa.gov/mdl/psurge2.0/
+# # First, get a grib2 file from: http://www.nws.noaa.gov/mdl/psurge2.0/
 # 
 # ### Then, use wgrib2 to convert from GRIB2 to netCDF
 # #### prompt> wgrib2 Arthur_Adv14_2014070406_e10_cum_agl.grb  -netcdf Arthur_Adv14_2014070406_e10_cum_agl.nc
 # 
 # ### Then, subset using NCO's ncea.  Subsetting is done along the x,y coordinate dimensions. 
 # #### prompt> ncea -d y,2500,3500 -d x,6700,7500 Arthur_Adv14_2014070406_e10_cum_agl.nc Arthur_Adv14_2014070406_e10_cum_agl_reduced.nc
+# #### prompt> ncea -d y,2500,3500 -d x,6700,7500 Arthur_Adv14_2014070406_e10_cum_agl.nc Arthur_Adv14_2014070406_e10_cum_agl_reduced.nc
 
-# In[1]:
+# In[2]:
 
 import netCDF4
 import matplotlib.pyplot as plt
@@ -22,14 +23,15 @@ from mpl_toolkits.basemap import Basemap
 get_ipython().magic(u'matplotlib inline')
 
 
-# In[2]:
+# In[16]:
 
-url='http://mrtee.europa.renci.org:8080/thredds/dodsC/testAll/Arthur_Adv14_2014070406_e10_cum_agl_reduced.ncml'
+url='http://opendap.renci.org:1935/thredds/dodsC/Test/Matthew_Adv37_2016100706_e10_cum_agl_reduced.nc'
+#url='http://mrtee.europa.renci.org:8080/thredds/dodsC/testAll/Arthur_Adv14_2014070406_e10_cum_agl_reduced.ncml'
 nc=netCDF4.Dataset(url)
 print nc
 
 
-# In[7]:
+# In[17]:
 
 lon=nc.variables['longitude']
 #lond=lon[idy1:idy2,idx1:idx2]
@@ -38,7 +40,7 @@ lond=lond-360
 print np.min(lond), np.max(lond)
 
 
-# In[8]:
+# In[18]:
 
 lat=nc.variables['latitude']
 #latd=lat[idy1:idy2,idx1:idx2]
@@ -48,7 +50,7 @@ latmn = np.mean(latd)
 print latmn
 
 
-# In[11]:
+# In[19]:
 
 tidx=10
 time=nc.variables['time']
@@ -60,7 +62,7 @@ tstr= "PSURGE Grib2->netCDF test\nRef Date = %s\n%s\n" % ( time.reference_date, 
 print tstr
 
 
-# In[15]:
+# In[20]:
 
 var_name='SURGE_0maboveground'
 var=nc.variables[var_name]
@@ -71,7 +73,7 @@ vmax=np.nanmax(var_d)
 print vmin, vmax
 
 
-# In[18]:
+# In[21]:
 
 fig = plt.figure(figsize=(12,6), dpi=144)
 ax = fig.add_axes([0.1, 0.1, 0.8, 0.8])

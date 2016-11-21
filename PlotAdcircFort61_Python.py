@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[21]:
+# In[1]:
 
 import netCDF4
 import matplotlib.pyplot as plt
@@ -12,15 +12,16 @@ import math as math
 get_ipython().magic(u'matplotlib notebook')
 
 
-# In[22]:
+# In[2]:
 
-url='http://localhost:8080/thredds/dodsC/testAll/fort.61.nc'
+url='http://opendap.renci.org:1935/thredds/dodsC/tc/matthew/00/nc_inundation_v9.99_w_rivers/hatteras.renci.org/hindmatt/gahm/fort.61.nc'
+#http://localhost:8080/thredds/dodsC/testAll/fort.61.nc'
 var_name='zeta'
 nc=netCDF4.Dataset(url)
 print nc.variables.keys()
 
 
-# In[23]:
+# In[3]:
 
 time=nc.variables['time']
 var=nc.variables[var_name]
@@ -38,9 +39,9 @@ for i in range(sn.shape[0]) :
 for p in lstr: print p
 
 
-# In[24]:
+# In[5]:
 
-fig = plt.figure(figsize=(12,6), dpi=144)
+fig = plt.figure(figsize=(12,6))
 pc=plt.plot(dtime,var)
 plt.title("%s\n%s\n%s" % (nc.title, var.long_name, tstr), fontsize=20)
 plt.grid(True)

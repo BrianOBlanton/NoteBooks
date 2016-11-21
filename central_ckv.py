@@ -27,7 +27,8 @@ def central_ckv (P,R,c,k,weights,Nd,index,xtest):
 
     temp=ml.repmat(mean_R,NSupportPoints,1)
     numer=R-temp
-
+    
+    # S needs tp be sparse for large grids...
     S=np.array(1/std_R)
     S=np.diag(np.squeeze(S),k=0)
     

@@ -1,0 +1,62 @@
+program testowiread
+
+      implicit none
+      character :: part1*12,part2*7,part3*6
+      integer*8 :: date1R,date2R,date1B,date2B
+      integer*8 :: date1p,date2p
+      integer :: iLatR,iLongR,iCYMDHR,iMinR
+      real(8)  :: dxR,dyR,swlatR,swlongR
+      integer :: iLatB,iLongB,iCYMDHB,iMinB
+      real(8)  :: dxB,dyB,swlatB,swlongB
+      integer :: iLatw,iLongw,iCYMDHw,iMinw
+      real(8)  :: dxw,dyw,swlatw,swlongw
+      integer :: iLatp,iLongp,iCYMDHp,iMinp
+      real(8)  :: dxp,dyp,swlatp,swlongp
+      integer :: isnapR,updateR
+      integer :: isnapB,updateB
+      real(8), dimension(:,:), allocatable :: uR,vR,pR,uB,vB,pB
+
+      logical :: regionExists
+
+      integer,allocatable :: swpointsR(:,:)
+      integer,allocatable :: swpointsB(:,:)
+      integer i,j,c
+
+      OPEN(221,FILE='fort.221', STATUS='OLD')
+
+      ! Read begining/ending dates of pre file
+      read(221,10,err=99999,ADVANCE="NO")part1,part2,part3
+ 10   FORMAT(a,1x,a,1x,a)
+      read(221,*)date1p,date2p
+
+      write(*,*)'date1 in basin pre file = ',date1p
+      write(*,*)'date2 in basin pre file = ',date2p
+      c=0
+      do while (1)
+      ! Read grid specifications/date in pressure file
+      read (221,11,end=10000,err=99999) iLatp,iLongp,dxp,dyp,swlatp,swlongp,iCYMDHp,iMinp
+      c=c+1
+      WRITE(*,*)c,iCYMDHp,iMinp
+      if(allocated(pB))    deallocate(pB)
+      allocate(pB(iLongB,iLatB))
+
+      ! Read pressure
+      read(221,22,end=10000,err=99999) ((pB(i,j),i=1,iLongB),j=1,iLatB)
+
+      end do 
+
+      stop 'normal'
+
+10000 continue
+      stop 'file ended'
+
+99999 CONTINUE
+
+      STOP 'OWIWIND READ ERROR (1)'
+
+ 11   format(t6,i4,t16,i4,t23,f6.0,t32,f6.0,t44,f8.0,t58,f8.0,t69,i10,i2)
+ 22   format(8f10.0)
+      
+
+end program testowiread
+

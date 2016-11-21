@@ -3,7 +3,7 @@
 
 # # Example of working with HYCOM output available on the hycom.org tds
 
-# In[1]:
+# In[2]:
 
 # Import packages we'll need
 import netCDF4
@@ -15,7 +15,7 @@ from mpl_toolkits.basemap import Basemap
 get_ipython().magic(u'matplotlib inline')
 
 
-# In[2]:
+# In[3]:
 
 def find_nearest(array,value):
     idx = (np.abs(array-value)).argmin()
@@ -25,7 +25,7 @@ def find_nearest_idx(array,value):
     return idx
 
 
-# In[3]:
+# In[4]:
 
 # open pipes to hycom output
 url='http://tds.hycom.org/thredds/dodsC/GLBa0.08/expt_91.1/2015'
@@ -33,12 +33,12 @@ nc=netCDF4.Dataset(url)
 print 'Available variables are: ' +  str(nc.variables.keys())
 
 
-# In[4]:
+# In[5]:
 
 print nc
 
 
-# In[5]:
+# In[6]:
 
 # create variables for u,v,x,y,depth
 lon=nc.variables['Longitude']
@@ -68,7 +68,7 @@ lat_d=lat_d[ilat1:ilat2]
 lons,lats = np.meshgrid(lon_d,lat_d)
 
 
-# In[6]:
+# In[7]:
 
 # specify time level
 it=1
@@ -78,7 +78,7 @@ time=Time[it]
 print time
 
 
-# In[7]:
+# In[8]:
 
 # 
 var1_name='ssh'
@@ -93,7 +93,7 @@ vminmax=np.ceil(2*max(abs(vmin),abs(vmax)))/2
 print vmin,vmax,vminmax
 
 
-# In[8]:
+# In[9]:
 
 ilev=1   # specify vertical level to extract
 uvel_name='u'
@@ -110,7 +110,7 @@ vvel_max=vvel_d.max()
 print vvel_min,vvel_max
 
 
-# In[9]:
+# In[10]:
 
 # Let's plot ssh, for a test
 fig = plt.figure(figsize=(18,9), dpi=144)
@@ -136,15 +136,14 @@ cb.set_label(var1.units, fontsize=24)
 cb.ax.tick_params(axis='both', which='major', labelsize=20)
 
 
-# In[24]:
+# In[11]:
 
 llcrnrlon=np.floor(np.min(lon_d))  # lower-left corner, lon
 llcrnrlat=np.floor(np.min(lat_d))  # lower-left corner, lat
 urcrnrlon=np.ceil(np.max(lon_d))   # upper-right corner, lon
 urcrnrlat=np.ceil(np.max(lat_d))   # upper-right corner, lat
-lon_0    =np.mean(lon_d)        # center of map domain (in degrees).
-lat_1    =np.mean(lat_d)        # first standard parallel for lambert conformal
-print lon_0,lat_1
+lon_0    =np.mean(lon_d)           # center of map domain (in degrees).
+lat_1    =np.mean(lat_d)           # first standard parallel for lambert conformal
 
 fig = plt.figure(figsize=(18,9), dpi=72)
 ax = fig.add_axes([0.1, 0.1, 0.8, 0.8])
@@ -171,12 +170,10 @@ x,y=map(lons,lats)
 
 pc=plt.pcolormesh(x, y, var1_d, cmap=plt.cm.jet, 
                   vmin=-vminmax, vmax=vminmax)
+
 Q = quiver(x[::ivecstride, ::ivecstride],y[::ivecstride, ::ivecstride], 
            uvel_d[::ivecstride , ::ivecstride], vvel_d[::ivecstride, ::ivecstride], 
            angles='xy',scale_units='xy')
-print lons[0,0] , x[0,0]
-print lats[0,0] , y[0,0]
-print var1_d[0,0] 
 
 cb = map.colorbar(pc,"right", size="5%", pad="10%")
 cb.set_label(var1.units, fontsize=24)
@@ -185,6 +182,15 @@ cb.ax.tick_params(axis='both', which='major', labelsize=12)
 plt.title("%s\n%s @ %s" % (nc.title, var1_name, time), fontsize=30)
 plt.show()
 
+
+# In[12]:
+
+print Q
+
+
+# In[15]:
+
+Q.remove()
 
 
 # In[ ]:
