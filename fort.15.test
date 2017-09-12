@@ -1,0 +1,214 @@
+ASGS cs:20120901000000 cy:SANDY17 ASGS    ! 30 CHARACTER ALPHANUM RUN DESCRIPTION
+nhcConsensus       ! 20 CHARACTER ALPANUMERIC RUN IDENTIFICATION
+1                         ! NFOVER - NONFATAL ERROR OVERRIDE OPTION
+1                         ! NABOUT - ABREVIATED OUTPUT OPTION PARAMETER
+100                         ! NSCREEN - UNIT 6 OUTPUT OPTION PARAMETER
+67                         ! IHOT - HOT START PARAMETER
+2                         ! ICS - COORDINATE SYSTEM SELECTION PARAMETER
+0                         ! IM - MODEL TYPE (0 INDICATES STANDARD DEPTH INTEGRATED MODEL)
+1                         ! NOLIBF - BOTTOM FRICTION TERM SELECTION PARAMETER
+2                         ! NOLIFA - FINITE AMPLITUDE TERM SELECTION PARAMETER
+0                         ! NOLICA - SPATIAL DERIVATIVE PORTION OF CONV. TERM SELECTION PARAMETER
+0                         ! NOLICAT - TIME DERIVATIVE PORTION OF CONVECTIVE TERM SELECTION PARAMETER
+4                         ! NWP - VARIABLE BOTTOM FRICTION AND LATERAL VISCOSITY OPTION PARAMETER
+sea_surface_height_above_geoid
+mannings_n_at_sea_floor
+primitive_weighting_in_continuity_equation
+average_horizontal_eddy_viscosity_in_sea_water_wrt_depth
+1                         ! NCOR - VARIABLE CORIOLIS IN SPACE OPTION PARAMETER
+0                         ! NTIP - TIDAL POTENTIAL OPTION PARAMETER
+19                        ! NWS - WIND STRESS AND BAROMETRIC PRESSURE OPTION PARAMETER
+1                         ! NRAMP - RAMP FUNCTION OPTION
+9.81                      ! G - ACCELERATION DUE TO GRAVITY - DETERMINES UNITS
+-3                        ! TAU0 - WEIGHTING FACTOR IN GWCE
+1.0                       ! DT - TIME STEP (IN SECONDS)
+0.0                       ! STATIM - STARTING TIME (IN DAYS)
+0.0                       ! REFTIM - REFERENCE TIME (IN DAYS)
+2012 10 29 0 1 0.9 1200                 ! WTIMINC  
+5.                  ! RNDAY - TOTAL LENGTH OF SIMULATION (IN DAYS)
+1.0                      ! DRAMP - DURATION OF RAMP FUNCTION (IN DAYS)
+0.33 0.34 0.33            ! TIME WEIGHTING FACTORS FOR THE GWCE EQUATION
+0.50 0 0 .02            ! H0 - MINIMUM CUTOFF DEPTH
+-79.0 35.0                ! SLAM0,SFEA0 - CENTER OF CPP PROJECTION IN DEGREES LONG/LAT
+0.003  1. 10. 0.33333     ! FFACTOR - BOTTOM FRICTION COEFFICIENT
+20.0                       ! ESL - LATERAL EDDY VISCOSITY COEFFICIENT; IGNORED IF NWP =1
+0.0                       ! CORI - CORIOLIS PARAMETER - IGNORED IF NCOR = 1
+0                         ! NTIF - TOTAL NUMBER OF TIDAL POTENTIAL CONSTITUENTS
+1                !  NBFR - TOTAL NUMBER OF FORCING FREQUENCIES ON OPEN BOUNDARIES
+STEADY
+ 0.0 1.0 0.0
+STEADY
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+0. 0.
+100.0                      ! ANGINN : INNER ANGLE THRESHOLD
+-3 0.0 365.0 900            ! NOUTE,TOUTSE,TOUTFE,NSPOOLE:ELEV STATION OUTPUT INFO (UNIT  61)
+44
+ -74.17060     40.51400      !NY Harbor
+ -66.98500     44.90333      !Eastport Passamaquoddy Bay, ME   (NOS Station ID 841014)               
+ -67.29666     44.64166      !Cutler Naval Base, ME            (NOS Station ID 8411250)              
+ -68.20000     44.40000      !Bar Harbor, ME                   (NOS Station ID 8413320)              
+ -70.24666     43.65666      !Portland, ME                     (NOS Station ID 8418150)              
+ -71.05166     42.35500      !Boston, MA                       (NOS Station ID 8443970)              
+ -70.67000     41.51333      !Woods Hole, MA                   (NOS Station ID 8447930)              
+ -70.09500     41.28666      !Nantucket Island, MA             (NOS Station ID 8449130)              
+ -71.61333     41.15833      !Block Island, RI                 (NOS Station ID 8459681)              
+ -71.96666     41.05000      !Montauk, NY                      (NOS Station ID 8510560)              
+ -74.01166     40.46833      !Sandy Hook, NJ                   (NOS Station ID 8531680)              
+ -74.41833     39.35166      !Atlantic City, NJ                (NOS Station ID 8534720)              
+ -74.96000     38.96833      !Cape May Ferry Terminal, NJ      (NOS Station ID 8536110)              
+ -75.12000     38.78166      !Lewes, DE                        (NOS Station ID 8557380)              
+ -75.98833     37.16666      !Kiptopeke, VA                    (NOS Station ID 8632200)              
+ -76.29000     37.61500      !Windmill Pt., VA                 (NOS Station ID 8636580)              
+ -76.50000     37.24666      !Gloucester Pt., VA               (NOS Station ID 8637624)              
+ -76.11333     36.96666      !Chesapeake Bay Bridge Tunnel, VA (NOS Station ID 8638863)              
+ -75.74666     36.18333      !Duck Pier, NC                    (NOS Station ID 8651370)              
+ -75.63500     35.22333      !Cape Hatteras Fishing Pier, NC   (NOS Station ID 8654400)              
+ -76.67000     34.72000      !Beaufort, NC                     (NOS Station ID 8656483)              
+ -78.91833     33.65500      !Springmaid Pier, SC              (NOS Station ID 8661070)              
+ -79.92500     32.78166      !Charleston, SC                   (NOS Station ID 8665530)              
+ -80.90166     32.03333      !Fort Pulaski, GA                 (NOS Station ID 8670870)              
+ -81.43000     30.39666      !Mayport (Bar Pilots Dock), FL    (NOS Station ID 8720218)              
+ -81.26333     29.85666      !St. Augustine Beach, FL          (NOS Station ID 8720587)              
+ -80.59333     28.41500      !Trident Pier, FL                 (NOS Station ID 8721604)              
+ -80.16166     25.73166      !Virginia Key, FL                 (NOS Station ID 8723214)              
+ -81.10500     24.71166      !Vaca Key, FL                     (NOS Station ID 8723970)              
+ -81.80833     24.55333      !Key West, FL                     (NOS Station ID 8724580)              
+ -81.80666     26.13000      !Naples, FL                       (NOS Station ID 8725110)              
+ -82.83166     27.97666      !Clearwater Beach, FL             (NOS Station ID 8726724)              
+ -83.03166     29.13500      !Cedar Key, FL                    (NOS Station ID 8727520)              
+ -84.98166     29.72666      !Apalachicola, FL                 (NOS Station ID 8728690)              
+ -85.88000     30.21333      !Panama City Beach, FL            (NOS Station ID 8729210)              
+ -87.21166     30.40333      !Pensacola, FL                    (NOS Station ID 8729840)              
+ -89.36666     30.28166      !Waveland, MS                     (NOS Station ID 8747766)              
+ -89.14000     28.99000      !South Pass, LA                   (NOS Station ID 8760551)              
+ -89.95666     29.26333      !Grand Isle, LA                   (NOS Station ID 8761724)              
+ -93.87000     29.73166      !Sabine Pass North, TX            (NOS Station ID 8770570)              
+ -94.78833     29.28500      !Galveston Pleasure Pier, TX      (NOS Station ID 8771510)              
+ -95.30833     28.94833      !Freeport, TX                     (NOS Station ID 8772440)              
+ -97.21666     27.58000      !Corpus Christi, TX               (NOS Station ID 8775870)              
+ -97.21500     26.06000      !Port Isabel, Laguna Madre, TX    (NOS Station ID 8779770)              
+-3 0.0 365.0 99999             ! NOUTV,TOUTSV,TOUTFV,NSPOOLV:VEL STATION OUTPUT INFO (UNIT 62)
+ 0   ! NSTAV
+-3 0.0 365.0 7200          ! NOUTM,TOUTSM,TOUTFM,NSPOOLM: MET STATION OUTPUT INFO (UNITS 71 72 )
+0
+-3 0.0 365.0 3600           ! NOUTGE,TOUTSGE,TOUTFGE,NSPOOLGE : GLOBAL ELEV OUTPUT (UNIT  63)
+-3 0.0 365.0 3600           ! NOUTGV,TOUTSGV,TOUTFGV,NSPOOLGV : GLOBAL VEL  OUTPUT (UNIT  64)
+-3 0.0 365.0 3600         ! NOUTGW,TOUTSGW,TOUTFGW,NSPOOLGW : GLOBAL MET  OUTPUT (UNITS  73 74)
+ 0                                     ! NHARF - NUMBER OF FREQENCIES IN HARMONIC ANALYSIS
+ 30  120   720  0.0000000    ! THAS, THAF, NHAINC,FMV
+ 0 0 0 0                    ! NHASE,NHASV,NHAGE,NHAGV
+ 0  99999         ! NHSTAR,NHSINC
+ 1  0  1e-10  25            ! ITITER,ISLDIA,CONVCR,ITMAX
+DesignSafeTests
+RENCI
+adcirc
+netCDF test
+test
+netcdftest
+stampede
+unknown
+B.Blanton
+2011-08-11 00:00:00
+
+

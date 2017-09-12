@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[1]:
+# In[7]:
 
 # Example of iRODS get in Python client API
 # Just file in your password and file names
@@ -48,18 +48,18 @@ finally:
         irods_f.close()
 
 
-# In[6]:
+# In[3]:
 
 print irods_f
 # nc=netCDF4.Dataset(local_path)
 
 
-# In[3]:
+# In[4]:
 
 print data
 
 
-# In[ ]:
+# In[5]:
 
 print obj.manager
 

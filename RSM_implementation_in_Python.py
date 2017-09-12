@@ -19,6 +19,17 @@ import numpy.linalg as la
 import numpy.ma as ma
 #import osmapi
 
+
+import warnings
+warnings.filterwarnings('ignore')
+
+#from __future__ import print_function # for python 2
+from ipywidgets import interact, interactive, fixed
+import ipywidgets as widgets
+
+np.set_printoptions(precision=3)
+np.set_printoptions(suppress=True)
+
 #from central_ckv_new import central_ckv
 
 
@@ -40,7 +51,7 @@ f = h5py.File(mf, "r")
 print f
 
 
-# In[339]:
+# In[11]:
 
 #print f.keys()
 #for name in f:
@@ -64,7 +75,7 @@ xtest=np.squeeze(np.transpose(xtest))
 Nd=40
 c=.4
 k=1
-#weights=np.ones(6)
+weights=np.ones(6)
 
 rmw=xtest[0]
 H_b=xtest[1]
@@ -100,13 +111,13 @@ NodeIndices=np.squeeze(f['NodeIndices'][:])
 NodeIndices=(NodeIndices-1).astype(int)
 
 
-# In[340]:
+# In[12]:
 
 print c, k, Nd
 print weights
 
 
-# In[341]:
+# In[13]:
 
 def sur_model(Normalized_X,
               Weight_Matrix,
@@ -167,6 +178,15 @@ def sur_model(Normalized_X,
     L=np.dot(np.transpose(Ba),W)
     M=np.dot(L,Ba) 
     
+    # force M to be positive definite
+    W,v=la.eig(M)
+    posdef=all(W>0)
+    dM=np.identity(M.shape[0])*(10+M.shape[0])*np.finfo(float32).eps
+    while (~posdef):
+        M=M+dM
+        W,v=la.eig(M)
+        posdef=all(W>0)
+    
     # auxM are the b'*inv(M)*L coefficients in eqn 24 of Taflanidis 2012
     Mi=la.inv(M)
     temp=np.dot(b,Mi)
@@ -179,7 +199,7 @@ def sur_model(Normalized_X,
     return f
 
 
-# In[342]:
+# In[14]:
 
 def central_ckv (P,
                  R,
@@ -201,8 +221,9 @@ def central_ckv (P,
     mean_P=np.expand_dims(mean_P,axis=1)
     mean_P=np.transpose(mean_P)
 
-    std_P=np.std(P,axis=1,ddof=1);    
+    std_P=np.std(P,axis=1,ddof=0);    
     v_aux=np.diag(1/std_P)
+    
 #    Weight_Matrix=np.diag(weights/std_P); 
     Weight_Matrix=np.diag(weights); 
 
@@ -214,21 +235,19 @@ def central_ckv (P,
 
     temp=P-np.transpose(mean_P)
     Normalized_P=np.dot(v_aux,temp)
-#    print "Normalized_P.shape=",Normalized_P.shape
     NSupportPoints=Normalized_P.shape[1];  
 
     Normalized_X=np.dot(v_aux,np.transpose(xtest-mean_P))
     #Normalized_X=expand_dims(np.transpose(xtest),axis=1)
-    print np.min(Normalized_P,axis=1)
-    print np.transpose(Normalized_X)
-    print np.max(Normalized_P,axis=1)
-
+    #print np.min(Normalized_P,axis=1)
+    #print np.transpose(Normalized_X)
+    #print np.max(Normalized_P,axis=1)
     
     mean_R=np.mean(R,axis=0); 
     mean_R=np.expand_dims(mean_R,axis=1)
     mean_R=np.transpose(mean_R)
 
-    std_R=np.std(R,axis=0,ddof=1);
+    std_R=np.std(R,axis=0,ddof=0);
     std_R=np.expand_dims(std_R,axis=1)
 
     temp=ml.repmat(mean_R,NSupportPoints,1)
@@ -271,7 +290,7 @@ def central_ckv (P,
     return zhat
 
 
-# In[343]:
+# In[15]:
 
 def master(rmw,H_b,TS,Vmax,LatNorth,LatSouth):
     
@@ -320,19 +339,12 @@ def master(rmw,H_b,TS,Vmax,LatNorth,LatSouth):
     cb.ax.tick_params(axis='both', which='major', labelsize=8)
 
 
-# In[347]:
+# In[16]:
 
 master(66.8,1,7.5,38,4,6)
 
 
-# In[233]:
-
-#from __future__ import print_function # for python 2
-from ipywidgets import interact, interactive, fixed
-import ipywidgets as widgets
-
-
-# In[249]:
+# In[17]:
 
 #rmw,H_b,TS,Vmax,LatNorth,LatSouth
 interact(master,          rmw     =widgets.FloatSlider(min=p1min,max=p1max,step=dp1,value=rmw),         H_b     =widgets.FloatSlider(min=p2min,max=p2max,step=dp2,value=H_b),         TS      =widgets.FloatSlider(min=p3min,max=p3max,step=dp3,value=TS),         Vmax    =widgets.FloatSlider(min=p4min,max=p4max,step=dp4,value=Vmax),         LatNorth=widgets.FloatSlider(min=p5min,max=p5max,step=dp5,value=LatNorth),         LatSouth=widgets.FloatSlider(min=p6min,max=p6max,step=dp6,value=LatSouth))
